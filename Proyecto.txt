@@ -5,4 +5,4 @@ clientes, actualmente ellos cuentan con su sistema en consola pero quieren migra
 aplicación Desktop, por lo que usted será el encargado de realizar esta labor.
 
 
-Edy Chay
+Edy Chay 1
