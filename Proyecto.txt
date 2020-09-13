@@ -1,0 +1,5 @@
+Usted ha sido contratado para desarrollar una aplicación para la empresa Auto Partes, esta
+empresa se dedica a la venta de repuestos de todo tipo de vehículo automotor, además cuenta
+con el servicio de envío lo cual le ha servido como estrategia de negocio para incrementar a sus
+clientes, actualmente ellos cuentan con su sistema en consola pero quieren migrar a una
+aplicación Desktop, por lo que usted será el encargado de realizar esta labor.
