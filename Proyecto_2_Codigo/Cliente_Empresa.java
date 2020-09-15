@@ -31,9 +31,8 @@ public class Cliente_Empresa extends Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente_Empresa ["+super.toString()+"contacto=" + contacto + ", descuentoEmpresa=" + descuentoEmpresa + "]";
+		return "[Cliente_Empresa] " + super.toString() + "contacto=" + contacto + ", descuentoEmpresa="
+				+ descuentoEmpresa + "";
 	}
-	
-	
 
 }

@@ -20,7 +20,7 @@ public class Cliente_Individual extends Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente_Individual [" + super.toString() + "dpi=" + dpi + "]";
+		return "[Cliente_Individual] " + super.toString() + "dpi=" + dpi + "";
 	}
 
 }
