@@ -17,20 +17,45 @@ public class MainMomentaneo {
 		Cliente_Empresa eCliente1 = new Cliente_Empresa("Edy", "Chay", "Lote 40", "Juan", 1);
 
 		Producto product = new Producto("Bujia", 50.50);
+		
+		////////////////////////////////////////////
 
 		System.out.println("Cliente");
-
+		
 		System.out.println(eCliente.toString() + "\n" + eCliente1.toString());
 
-		System.out.println(DataSistemaCliente.clientes.get(5));
+		System.out.println(DataSistema.clientes.get(5));
 
 		System.out.println(Utilerias.getNombreClase(eCliente.getClass()));
-
+		
+		System.out.println("");
+		
+		
+		/////////////////////////////////////////////
 		System.out.println("Producto");
 
 		System.out.println(product.toString());
 
-		System.out.println(DataSistemaProducto.producto.get(5));
+		System.out.println(DataSistema.productos.get(5));
+		
+		System.out.println("");
+		
+		///////////////////////////////////////////////
+		System.out.println("Orden");
+		
+		OrdenDeVenta ov=new OrdenDeVenta();
+				
+		System.out.println("");
+		
+		///////////////////////////////////////////////
+		System.out.println("Orden");
+		
+		ItemOrden io=new ItemOrden(1, 5, DataSistema.productos.get(5));
+		System.out.println(io.toString());		
+		System.out.println(io.getTotalItem());
+		System.out.println(DataSistema.item.get(6));
+		System.out.println(DataSistema.item.get(6).getTotalItem());
+		
 
 	}
 

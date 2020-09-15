@@ -14,18 +14,21 @@ public class OrdenDeVenta {
 	private String tipoEnvio;
 	private String estado;
 	private int diasEnvio;
-	private static int sigIdOrden=3000;
-	
-	public OrdenDeVenta() {
-		idOrdenV=OrdenDeVenta.siguienteId();
-				
-	}
-	
+	private static int sigIdOrden = 3000;
+
 	public static int siguienteId() {
 		return sigIdOrden++;
 	}
-	
-	
-	
-	
+
+	public OrdenDeVenta() {
+		idOrdenV = OrdenDeVenta.siguienteId();
+		total = 0;
+		fechaorden = new Date();
+	}
+
+	public OrdenDeVenta(Date fechaorden) {
+		this();
+		
+	}
+
 }
