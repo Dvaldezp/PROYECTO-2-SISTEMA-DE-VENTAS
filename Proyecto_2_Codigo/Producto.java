@@ -10,7 +10,7 @@ public class Producto {
 	
 	
 	public static int sigIdProducto() {
-		return idSiguiente;
+		return idSiguiente++;
 
 	}
 	
