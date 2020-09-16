@@ -1,22 +1,20 @@
 package Proyecto_2_Codigo;
 
 public class Producto {
-	
+
 	private int idProducto;
 	private static int idSiguiente = 2000;
 	private String nombreProducto;
 	private double precio;
-	
-	
-	
+
 	public static int sigIdProducto() {
 		return idSiguiente++;
 
 	}
-	
-	public Producto() {//Default
-		idProducto=Producto.sigIdProducto();
-		
+
+	public Producto() {// Default
+		idProducto = Producto.sigIdProducto();
+
 	}
 
 	public Producto(String nombreProducto, double precio) {
@@ -53,12 +51,5 @@ public class Producto {
 	public String toString() {
 		return "[Producto] idProducto=" + idProducto + ", nombreProducto=" + nombreProducto + ", precio=" + precio;
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }

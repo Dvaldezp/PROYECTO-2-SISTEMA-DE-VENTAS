@@ -28,6 +28,21 @@ public class OrdenDeVenta {
 
 	public OrdenDeVenta(Date fechaorden) {
 		this();
+		this.fechaorden=fechaorden;
+	}
+	
+	public OrdenDeVenta(Date fechaorden, Cliente cliente) {
+		this(fechaorden);
+		this.cliente=cliente;
+		item1=DataSistema.item.get(0);
+		item2=DataSistema.item.get(1);
+		
+	}
+	
+	
+	public double getTotalOrden() {
+		
+		return item1.getTotalItem()+item2.getTotalItem();
 		
 	}
 
