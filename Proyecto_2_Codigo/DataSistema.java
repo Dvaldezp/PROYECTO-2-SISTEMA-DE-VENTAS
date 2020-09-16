@@ -17,8 +17,7 @@ public class DataSistema {
 
 		}
 	};
-	
-	
+
 	public static ArrayList<Producto> productos = new ArrayList<Producto>(8) {
 		{
 
@@ -33,8 +32,7 @@ public class DataSistema {
 
 		}
 	};
-	
-	
+
 	public static ArrayList<ItemOrden> item = new ArrayList<ItemOrden>(8) {
 		{
 			add(new ItemOrden(1, 5, DataSistema.productos.get(0)));
@@ -46,16 +44,7 @@ public class DataSistema {
 			add(new ItemOrden(1, 300, DataSistema.productos.get(6)));
 			add(new ItemOrden(1, 1, DataSistema.productos.get(0)));
 
-		
-
 		}
 	};
-	
-	
-	
-	
-	
-	
-	
 
 }

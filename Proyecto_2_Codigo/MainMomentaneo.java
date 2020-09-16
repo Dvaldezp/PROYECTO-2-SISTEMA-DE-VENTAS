@@ -1,5 +1,7 @@
 package Proyecto_2_Codigo;
 
+import java.util.Date;
+
 public class MainMomentaneo {
 
 	public static void main(String[] args) {
@@ -44,6 +46,11 @@ public class MainMomentaneo {
 		System.out.println("Orden");
 		
 		OrdenDeVenta ov=new OrdenDeVenta();
+		
+		Date fechaorden= new Date(2020, 9, 12);
+		
+		OrdenDeVenta ovf=new OrdenDeVenta(fechaorden,eCliente);
+		System.out.println(ovf.getTotalOrden());
 				
 		System.out.println("");
 		
