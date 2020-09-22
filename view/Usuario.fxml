@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <Pane prefHeight="402.0" prefWidth="600.0" style="-fx-background-color: #bf2c3d;">
+         <children>
+            <Label layoutX="85.0" layoutY="83.0" prefHeight="34.0" prefWidth="85.0" text="Usuario:" textFill="#e4dddd">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="85.0" layoutY="128.0" />
+            <PasswordField fx:id="txtContrasenia" layoutX="264.0" layoutY="128.0" />
+            <Button layoutX="448.0" layoutY="126.0" mnemonicParsing="false" onAction="#validarIngreso" text="Ingresar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="264.0" layoutY="83.0" prefHeight="34.0" prefWidth="135.0" text="Contraseña:" textFill="#ebe1e1">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="147.0" layoutY="223.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_honda_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="206.0" layoutY="223.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_fiat_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="88.0" layoutY="223.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_bmw_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="39.0" layoutX="44.0" layoutY="223.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_lexus_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="264.0" layoutY="227.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_porsche_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="314.0" layoutY="223.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_toyota_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="13.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_tesla_model_3_50px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="55.0" prefHeight="25.0" prefWidth="220.0" text="Ingrese sus Datos para ingresar al Sistema" textFill="#f8eded">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
