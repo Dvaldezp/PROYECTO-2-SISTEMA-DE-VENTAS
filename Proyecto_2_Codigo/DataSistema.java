@@ -21,14 +21,14 @@ public class DataSistema {
 	public static ArrayList<Producto> productos = new ArrayList<Producto>(8) {
 		{
 
-			add(new Producto("Bujia Iridium",TipoProducto.BUJIAS,10, 23.50));
-			add(new Producto("Bomba de Gasolina",TipoProducto.BOMBAS_DE_GASOLINA,10, 85.50));
-			add(new Producto("Punta de cremallera",TipoProducto.DIRECCION,50, 500.00));
-			add(new Producto("Bocina para moto",TipoProducto.BOCINAS_DE_MOTO,70, 101.50));
-			add(new Producto("Disco de Freno",TipoProducto.FRENOS_AUTOMOVILES,15, 400.00));
-			add(new Producto("Rotula",TipoProducto.DIRECCION,115,175.75));
-			add(new Producto("Buje",TipoProducto.BUJES,12, 12.50));
-			add(new Producto("Fullset ",TipoProducto.MOTORES,85, 300.58));
+			add(new Producto("Bujia Iridium", TipoProducto.BUJIAS, 10, 23.50));
+			add(new Producto("Bomba de Gasolina", TipoProducto.BOMBAS_DE_GASOLINA, 10, 85.50));
+			add(new Producto("Punta de cremallera", TipoProducto.DIRECCION, 50, 500.00));
+			add(new Producto("Bocina para moto", TipoProducto.BOCINAS_DE_MOTO, 70, 101.50));
+			add(new Producto("Disco de Freno", TipoProducto.FRENOS_AUTOMOVILES, 15, 400.00));
+			add(new Producto("Rotula", TipoProducto.DIRECCION, 115, 175.75));
+			add(new Producto("Buje", TipoProducto.BUJES, 12, 12.50));
+			add(new Producto("Fullset ", TipoProducto.MOTORES, 85, 300.58));
 
 		}
 	};

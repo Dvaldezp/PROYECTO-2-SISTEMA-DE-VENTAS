@@ -11,8 +11,11 @@ import javafx.stage.Stage;
 public class MainFX extends Application {
     
     public void start(Stage stage) throws Exception {
-        Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
+    	System.out.println(getClass().getResource("/view/Usuario.fxml"));
+        Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Usuario.fxml"));
+        
         Scene scene = new Scene(layout, 800, 600);
+        
 
         stage.setTitle("MENU");
         stage.setScene(scene);
