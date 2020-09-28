@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerCliente">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
@@ -58,7 +58,7 @@
             <MenuItem mnemonicParsing="false" text="Buscar Producto" />
          </items>
       </SplitMenuButton>
-      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Salir" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="btnsalir" layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Salir" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
