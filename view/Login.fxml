@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="413.0" prefWidth="734.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
          </image>
       </ImageView>
       <Label layoutX="57.0" layoutY="16.0" prefHeight="31.0" prefWidth="74.0" text="Cliente" textAlignment="RIGHT" textFill="#fcf9f9">
@@ -22,13 +22,13 @@
          </font>
       </Label>
       <SplitMenuButton layoutX="57.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Ver Clientes Generales" />
-          <MenuItem mnemonicParsing="false" text="Modificar Cliente" />
-            <MenuItem mnemonicParsing="false" text="Agregar Cliente" />
+         <items>
+            <MenuItem fx:id="VerClientesGenerales" mnemonicParsing="false" text="Ver Clientes Generales" />
             <MenuItem mnemonicParsing="false" text="Modificar Cliente" />
+            <MenuItem mnemonicParsing="false" text="Agregar Cliente" />
+            <MenuItem mnemonicParsing="false" text="Eliminar Cliente" />
             <MenuItem mnemonicParsing="false" text="Buscar Cliente" />
-        </items>
+         </items>
       </SplitMenuButton>
       <Label layoutX="224.0" layoutY="16.0" text="Factura" textAlignment="RIGHT" textFill="#eee8e8">
          <font>
@@ -58,35 +58,52 @@
             <MenuItem mnemonicParsing="false" text="Buscar Producto" />
          </items>
       </SplitMenuButton>
-      <Button layoutX="289.0" layoutY="344.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Salir" textAlignment="CENTER" textFill="#1e1943">
+      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Salir" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="354.0" layoutY="54.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="183.0" layoutY="54.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_purchase_order_32px.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_purchase_order_32px.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="14.0" layoutY="54.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_user_32px.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_user_32px.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="632.0" layoutY="18.0">
+      <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="752.0" layoutY="24.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="419.0" layoutY="344.0">
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="503.0" layoutY="525.0">
          <image>
-            <Image url="@../../../../../AppData/Local/Temp/icons8_exit_sign_24px.png" />
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_exit_sign_24px.png" />
          </image>
       </ImageView>
+      <Label layoutX="590.0" layoutY="16.0" text="Compras" textAlignment="RIGHT" textFill="#f5eeee">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="544.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
+         </image>
+      </ImageView>
+      <SplitMenuButton layoutX="590.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Orden de compra" />
+            <MenuItem mnemonicParsing="false" text="Ingresar Factura" />
+            <MenuItem mnemonicParsing="false" text="Historial de Compra" />
+         </items>
+      </SplitMenuButton>
    </children>
 </Pane>
