@@ -139,6 +139,23 @@ public class MainMomentaneo {
 			System.out.println(facturacion.toString());
 		}
 
+		//////////
+		/////////
+		//////// Probando COMPRAS
+		
+		ArrayList<Orden_de_Compra>compra=new ArrayList<Orden_de_Compra>();
+		
+		compra.add(new Orden_de_Compra());
+		
+		System.out.println(io.toString());
+		io.setCantidad(9000);
+		compra.get(0).agregarItem(io);
+		System.out.println(io.toString());
+
+		
+		
+		
+		
 	}
 
 }

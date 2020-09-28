@@ -34,6 +34,9 @@ public class Producto {
 		idProducto = Producto.sigIdProducto();
 
 	}
+	
+	
+	
 
 	public Producto(String nombreProducto, TipoProducto tipodeProducto, int cantidadInventario, double precio) {
 		this();

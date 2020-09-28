@@ -30,7 +30,7 @@ public class Facturacion extends OrdenDeVenta {
 
 		} else {
 
-			System.out.println("NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL");
+			System.out.println("NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL, el codigo es --> "+i.getProducto().getIdProducto());
 		}
 
 	}
