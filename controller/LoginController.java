@@ -1,18 +1,24 @@
 package controller;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import javax.swing.*;
-
 
 public class LoginController extends Application {
 
@@ -23,8 +29,6 @@ public class LoginController extends Application {
 
 	public TextField txtUsuario;
 	public PasswordField txtContrasenia;
-	
-
 
 	public void validarIngreso(ActionEvent actionEvent) {
 
@@ -33,21 +37,16 @@ public class LoginController extends Application {
 			JOptionPane.showMessageDialog(null, "Ingreso Correcto");
 
 			try {
-				FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
-				Parent layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
-				
-				
-				ControladorVerCliente controlador=fxmlLoader.getController();
-				
+				FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Menu.fxml"));
+				Parent layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Menu.fxml"));
+
+				ControladorMenu controlador = fxmlLoader.getController();
+
 				Scene scene = new Scene(layout, 800, 600);
+
 				Stage stage = new Stage();
-				stage.setTitle("Prueba");
-				stage.initModality(Modality.APPLICATION_MODAL);
 				stage.setScene(scene);
-				stage.showAndWait();
-				
-				
-				
+				stage.show();
 
 			} catch (Exception e) {
 				// TODO: handle exception
@@ -57,9 +56,7 @@ public class LoginController extends Application {
 
 			JOptionPane.showMessageDialog(null, "Acceso denegado", "Error", JOptionPane.ERROR_MESSAGE);
 		}
+
 	}
 
 }
-
-
-

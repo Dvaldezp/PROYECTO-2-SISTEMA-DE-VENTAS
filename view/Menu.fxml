@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorMenu">
+   <children>
+      <ImageView layoutX="395.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="354.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="183.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_purchase_order_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="14.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_user_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="752.0" layoutY="24.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="503.0" layoutY="525.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_exit_sign_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="544.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnsalir" layoutX="363.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarSalir" prefHeight="25.0" prefWidth="130.0" text="SALIR" textAlignment="CENTER" textFill="#1e1943">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <MenuBar prefHeight="25.0" prefWidth="855.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cliente">
+            <items>
+              <MenuItem fx:id="validarVerClienteI" mnemonicParsing="false" onAction="#validarVerClienteI" text="Ver todos los clientes individual" />
+                  <MenuItem fx:id="validarVerClienteEmpre" mnemonicParsing="false" onAction="#validarVerClienteEmpre" text="Ver todos los cliente empresa" />
+                  <MenuItem fx:id="validarModificarClienteE" mnemonicParsing="false" onAction="#validarModificarClienteE" text="Modificar Cliente Empresa" />
+                  <MenuItem fx:id="validarModificarClienteI" mnemonicParsing="false" onAction="#validarModificarClienteI" text="Modificar Cliente Individual" />
+                  <MenuItem fx:id="validarSalirr11" mnemonicParsing="false" text="Eliminar Cliente" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Factura">
+            <items>
+                  <MenuItem fx:id="validarSalirr31" mnemonicParsing="false" text="Realizar factura" />
+                  <MenuItem fx:id="validarSalirr3" mnemonicParsing="false" text="Ver todas las facturas" />
+                  <MenuItem fx:id="validarSalirr12" mnemonicParsing="false" text="Buscar Factura" />
+                  <MenuItem fx:id="validarSalirr21" mnemonicParsing="false" text="Imprimir Factura" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Inventario">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ver todos los producto" />
+                  <MenuItem mnemonicParsing="false" text="Modificar Producto" />
+                  <MenuItem mnemonicParsing="false" text="Agregar producto" />
+                  <MenuItem mnemonicParsing="false" text="Eliminar Producto" />
+                  <MenuItem mnemonicParsing="false" text="Ver Producto a detalle" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Compras">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Realizar orden de compra" />
+                  <MenuItem mnemonicParsing="false" text="Ver todas las compras" />
+                  <MenuItem mnemonicParsing="false" text="Buscar orden de compra" />
+                  <MenuItem mnemonicParsing="false" text="Confirmar compra" />
+                  <MenuItem mnemonicParsing="false" text="Imprimir orden de compra" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>

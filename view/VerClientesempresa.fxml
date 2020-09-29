@@ -15,7 +15,7 @@
             <Image url="@../../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
          </image>
       </ImageView>
-      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
