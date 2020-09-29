@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerCliente">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
             <Image url="@../../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
          </image>
       </ImageView>
-      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="btnregresar" layoutX="354.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarRegreso" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -30,16 +30,16 @@
             <Image url="@../../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
          </image>
       </ImageView>
-      <TableView layoutX="69.0" layoutY="165.0" prefHeight="310.0" prefWidth="718.0">
+      <Button fx:id="btnIndividuall" layoutX="227.0" layoutY="112.0" mnemonicParsing="false" onAction="#validarIndividual" prefHeight="25.0" prefWidth="103.0" text="Individual" />
+      <Button fx:id="btnEmpresa" layoutX="464.0" layoutY="113.0" mnemonicParsing="false" onAction="#validarEmpresa" prefHeight="25.0" prefWidth="103.0" text="Empresa" />
+      <TableView fx:id="tablaindi" layoutX="69.0" layoutY="165.0" prefHeight="310.0" prefWidth="718.0">
         <columns>
-          <TableColumn fx:id="idicodigo" prefWidth="97.0" text="Codigo" />
-          <TableColumn prefWidth="170.0" text="Nombre" />
-            <TableColumn prefWidth="88.0" text="Apellido" />
-            <TableColumn prefWidth="212.0" text="Dirección" />
-            <TableColumn minWidth="0.0" prefWidth="172.0" text="Dpi" />
+          <TableColumn fx:id="clcodigo" prefWidth="97.0" text="Codigo" />
+          <TableColumn fx:id="clnombre" prefWidth="170.0" text="Nombre" />
+            <TableColumn fx:id="clapellido" prefWidth="88.0" text="Apellido" />
+            <TableColumn fx:id="cldireccion" prefWidth="212.0" text="Direccion" />
+            <TableColumn fx:id="cldpi" minWidth="0.0" prefWidth="172.0" text="Dpi" />
         </columns>
       </TableView>
-      <Button layoutX="227.0" layoutY="112.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Individual" />
-      <Button layoutX="368.0" layoutY="112.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Empresa" />
    </children>
 </Pane>
