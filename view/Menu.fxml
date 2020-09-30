@@ -59,7 +59,12 @@
                   <MenuItem fx:id="validarVerClienteEmpre" mnemonicParsing="false" onAction="#validarVerClienteEmpre" text="Ver todos los cliente empresa" />
                   <MenuItem fx:id="validarModificarClienteE" mnemonicParsing="false" onAction="#validarModificarClienteE" text="Modificar Cliente Empresa" />
                   <MenuItem fx:id="validarModificarClienteI" mnemonicParsing="false" onAction="#validarModificarClienteI" text="Modificar Cliente Individual" />
-                  <MenuItem fx:id="validarSalirr11" mnemonicParsing="false" text="Eliminar Cliente" />
+                  <MenuItem fx:id="validarEliminarClienteIndi" mnemonicParsing="false" onAction="#validarEliminarClienteIndi" text="Eliminar Cliente Individual" />
+                  <MenuItem fx:id="validarEliminarClienteEmpre" mnemonicParsing="false" onAction="#validarEliminarClienteEmpre" text="Eliminar Cliente Empresa" />
+                  <MenuItem fx:id="buscarClienteIndi" mnemonicParsing="false" onAction="#buscarClienteIndi" text="Buscar Cliente Individual" />
+                  <MenuItem fx:id="buscarClienteEmpre" mnemonicParsing="false" onAction="#buscarClienteEmpre" text="Buscar Cliente Empresa" />
+                  <MenuItem fx:id="agregarClienteIndi" mnemonicParsing="false" onAction="#agregarClienteIndi" text="Agregar Cliente Individual" />
+                  <MenuItem fx:id="agregarClienteEmpre" mnemonicParsing="false" onAction="#agregarClienteEmpre" text="Agregar Cliente Empresa" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Factura">

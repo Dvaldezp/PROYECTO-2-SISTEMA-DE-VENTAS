@@ -34,5 +34,26 @@ public class Cliente_Empresa extends Cliente {
 		return "[Cliente_Empresa] " + super.toString() + "contacto=" + contacto + ", descuentoEmpresa="
 				+ descuentoEmpresa + "";
 	}
+	
+	
+	@Override
+	public void setDContactopadre(String contacto) {
+		this.contacto = contacto;
+	}
+	
+	@Override
+	public void setDescuentopadre(int descuentoEmpresa) {
+		this.descuentoEmpresa = descuentoEmpresa ;
+	}
+	
+	@Override
+	public String getContactopadre() {
+		return contacto;
+	}
+	
+	@Override
+	public int getDescuentoEmpresaPadre() {
+		return descuentoEmpresa;
+	}
 
 }

@@ -22,5 +22,15 @@ public class Cliente_Individual extends Cliente {
 	public String toString() {
 		return "[Cliente_Individual] " + super.toString() + "dpi=" + dpi + "";
 	}
+	
+	@Override
+	public void setDpipadre(String dpi) {
+		this.dpi = dpi;
+	}
+	
+	@Override
+	public String getDpipadre() {
+		return dpi;
+	}
 
 }
