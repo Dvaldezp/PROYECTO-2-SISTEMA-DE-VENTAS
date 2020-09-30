@@ -1,5 +1,7 @@
 package Proyecto_2_Codigo;
 
+import Proyecto_2_Codigo.Cliente_Individual;
+
 public class Cliente {
 
 	private int idCliente;
@@ -27,6 +29,9 @@ public class Cliente {
 	public int getIdCliente() {
 		return idCliente;
 	}
+	
+	
+	
 
 	public void setIdCliente(int idCliente) {
 		this.idCliente = idCliente;
@@ -60,6 +65,38 @@ public class Cliente {
 	public String toString() {
 		return "idCliente=" + idCliente + ", nombreCliente=" + nombreCliente + ", apellidoCliente=" + apellidoCliente
 				+ ", direccion=" + direccion + ", ";
+	}
+
+	
+
+	public void setDpipadre(String dpi) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setDContactopadre(String contacto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setDescuentopadre(int descuentoEmpresa) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String getContactopadre() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getDescuentoEmpresaPadre() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String getDpipadre() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

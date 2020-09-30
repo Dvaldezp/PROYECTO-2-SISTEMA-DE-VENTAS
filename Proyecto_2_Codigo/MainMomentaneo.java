@@ -1,4 +1,4 @@
-package Proyecto_2_Codigo;
+	package Proyecto_2_Codigo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -30,8 +30,12 @@ public class MainMomentaneo {
 		System.out.println(eCliente.toString() + "\n" + eCliente1.toString());
 
 		System.out.println(DataSistema.clientes.get(5));
-
+		
+		Utilerias.getNombreClase(eCliente.getClass());
 		System.out.println(Utilerias.getNombreClase(eCliente.getClass()));
+		System.out.println(Utilerias.getNombreClase(DataSistema.clientes.get(0).getClass()));
+		
+		
 
 		System.out.println("");
 
