@@ -152,9 +152,16 @@ public class MainMomentaneo {
 		compra.add(new Orden_de_Compra());
 
 		System.out.println(io.toString());
-		io.setCantidad(9000);
+		io.setCantidad(1);
 		compra.get(0).agregarItem(io);
 		System.out.println(io.toString());
+		
+		//////////////////
+		System.out.println("*****************");
+		DataFacturas.factura.get(0).agregarItem(io);
+		DataFacturas.factura.get(0).agregarItem(io);
+		System.out.println(DataFacturas.factura.get(0).toString());
+		
 
 	}
 

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerProducto">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
@@ -35,12 +35,17 @@
             <TableColumn minWidth="0.0" prefWidth="163.0" text="Precio" />
         </columns>
       </TableView>
-      <Label layoutX="109.0" layoutY="87.0" prefHeight="53.0" prefWidth="136.0" text="Ver Producto">
+      <Label layoutX="431.0" layoutY="61.0" prefHeight="53.0" prefWidth="136.0" text="Ver Productos">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="btnsalir" layoutX="426.0" layoutY="554.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="btnsalir" layoutX="426.0" layoutY="554.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="verTodoLosProductos" layoutX="409.0" layoutY="114.0" mnemonicParsing="false" onAction="#verTodoLosProductos" prefHeight="38.0" prefWidth="222.0" text="Ver todos los productos" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
