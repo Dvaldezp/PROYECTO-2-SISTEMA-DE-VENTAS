@@ -9,14 +9,14 @@ public class ControladorModClienteEmpre {
 
 	public TextField txtcodigo;
 	public TextField txtnombre;
-	public TextField txtcontacto;
 	public TextField txtdireccion;
-	public TextField txtdescuento;
+	public TextField txtcontacto;// APELLIDO
+	public TextField txtdesc;// dpi
 
 	String nombre1;
 	String contacto;
 	String direccion;
-	String descuento;
+	int descu;
 
 	public void buscarCliente(ActionEvent actionEvent) {
 
@@ -35,16 +35,15 @@ public class ControladorModClienteEmpre {
 					nombre = Utilerias.getNombreClase(DataSistema.clientes.get(i).getClass());
 
 					if (nombre.equals("Cliente_Empresa")) {
-
 						nombre1 = DataSistema.clientes.get(i).getNombreCliente();
 						contacto = DataSistema.clientes.get(i).getContactopadre();
 						direccion = DataSistema.clientes.get(i).getDireccion();
-						descuento = DataSistema.clientes.get(i).getContactopadre();
+						descu = DataSistema.clientes.get(i).getDescuentoEmpresaPadre();
 
 						txtnombre.setText(nombre1);
 						txtcontacto.setText(contacto);
 						txtdireccion.setText(direccion);
-						txtdescuento.setText(descuento);
+						txtdesc.setText(Integer.toString(descu));
 
 						prueba = true;
 
@@ -56,7 +55,7 @@ public class ControladorModClienteEmpre {
 					txtnombre.setText("");
 					txtcontacto.setText("");
 					txtdireccion.setText("");
-					txtdescuento.setText("");
+					txtdesc.setText("");
 				}
 
 			}
@@ -72,23 +71,25 @@ public class ControladorModClienteEmpre {
 		nombre1 = txtnombre.getText();
 		contacto = txtcontacto.getText();
 		direccion = txtdireccion.getText();
-		descuento = txtdescuento.getText();
+		descu = Integer.parseInt(txtdesc.getText());
 
 		boolean prueba = false;
 		try {
-
+			System.out.println(descu);
 			for (int i = 0; i < DataSistema.clientes.size(); i++) {
 				int num = Integer.parseInt(txtcodigo.getText());
 
+				String nombre = Utilerias.getNombreClase(DataSistema.clientes.get(i).getClass());
+
 				if (num == DataSistema.clientes.get(i).getIdCliente()) {
 
-					String nombre = Utilerias.getNombreClase(DataSistema.clientes.get(i).getClass());
-					if (nombre.equals("Cliente_E")) {
+					nombre = Utilerias.getNombreClase(DataSistema.clientes.get(i).getClass());
+					if (nombre.equals("Cliente_Empresa")) {
 
 						DataSistema.clientes.get(i).setNombreCliente(nombre1);
 						DataSistema.clientes.get(i).setDContactopadre(contacto);
 						DataSistema.clientes.get(i).setDireccion(direccion);
-						DataSistema.clientes.get(i).setDescuentopadre(Integer.parseInt(descuento));
+						DataSistema.clientes.get(i).setDescuentopadre(descu);
 
 						DataSistema.clientes.set(i, DataSistema.clientes.get(i));
 
@@ -101,11 +102,10 @@ public class ControladorModClienteEmpre {
 				}
 
 				if (prueba == false) {
-
 					txtnombre.setText("");
 					txtcontacto.setText("");
 					txtdireccion.setText("");
-					txtdescuento.setText("");
+					txtdesc.setText("");
 				}
 
 			}

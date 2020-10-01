@@ -10,6 +10,7 @@ public class Facturacion extends OrdenDeVenta {
 	private double totalDeFacturacion;
 	private int numeroDeFactura;
 	private static int sigIdFactura = 70000;
+	private boolean liberado=true;
 
 	public static int siguienteIdF() {
 		return sigIdFactura++;
@@ -22,18 +23,28 @@ public class Facturacion extends OrdenDeVenta {
 	}
 
 	public void agregarItem(ItemOrden i) {
-
+		if(liberado==true) {
 		if (verificaitem(i) == true) {
 
 			colecItem.add(i);
 			rebajarInventario(i);
 
-		} else {
+		} }else {
 
-			System.out.println("NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL, el codigo es --> "+i.getProducto().getIdProducto());
+			System.out.println(
+					"NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL, el codigo es --> "
+							+ i.getProducto().getIdProducto());
 		}
 
 	}
+	
+	
+	public void cerrarfactura() {
+		liberado=false;
+		getTotalOrden();
+	}
+	
+	
 
 	public boolean verificaitem(ItemOrden io) {
 		boolean veri = false;
@@ -43,9 +54,10 @@ public class Facturacion extends OrdenDeVenta {
 			if (DataSistema.productos.get(j).getIdProducto() == io.getProducto().getIdProducto()) {
 
 				if (DataSistema.productos.get(j).getCantidadInventario() >= io.getCantidad()) {
-					
-					System.out.println("--------------------------"+DataSistema.productos.get(j).getCantidadInventario());
-					System.out.println("--------------------------"+io.getCantidad());
+
+					System.out.println(
+							"--------------------------" + DataSistema.productos.get(j).getCantidadInventario());
+					System.out.println("--------------------------" + io.getCantidad());
 					veri = true;
 				}
 
@@ -98,4 +110,12 @@ public class Facturacion extends OrdenDeVenta {
 		return tmp;
 	}
 
+	public int getNumerodefactura() {
+		return numeroDeFactura;
+	}
+
+	
+	public String verCliente() {
+		return getCliente().getNombreCliente();
+	}
 }
