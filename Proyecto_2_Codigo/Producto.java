@@ -5,6 +5,7 @@ public class Producto {
 	private int idProducto;
 	private static int idSiguiente = 2000;
 	private String nombreProducto;
+	
 	private TipoProducto tipodeProducto;
 	private int cantidadInventario;
 	private double precio;

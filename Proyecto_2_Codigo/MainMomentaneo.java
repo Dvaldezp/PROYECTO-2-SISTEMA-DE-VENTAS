@@ -1,4 +1,4 @@
-	package Proyecto_2_Codigo;
+package Proyecto_2_Codigo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,7 +16,9 @@ public class MainMomentaneo {
 		 * 
 		 * System.out.println(eCliente.toString()+ eCliente1.toString());
 		 */
-
+		
+		System.out.println(DataFacturas.factura.get(1).getFechaorden());
+		
 		Cliente_Individual eCliente = new Cliente_Individual("Edy", "Chay", "Lote 40", "556563566");
 
 		Cliente_Empresa eCliente1 = new Cliente_Empresa("Edy", "Chay", "Lote 40", "Juan", 1);
@@ -30,12 +32,10 @@ public class MainMomentaneo {
 		System.out.println(eCliente.toString() + "\n" + eCliente1.toString());
 
 		System.out.println(DataSistema.clientes.get(5));
-		
+
 		Utilerias.getNombreClase(eCliente.getClass());
 		System.out.println(Utilerias.getNombreClase(eCliente.getClass()));
 		System.out.println(Utilerias.getNombreClase(DataSistema.clientes.get(0).getClass()));
-		
-		
 
 		System.out.println("");
 
@@ -146,20 +146,16 @@ public class MainMomentaneo {
 		//////////
 		/////////
 		//////// Probando COMPRAS
-		
-		ArrayList<Orden_de_Compra>compra=new ArrayList<Orden_de_Compra>();
-		
+
+		ArrayList<Orden_de_Compra> compra = new ArrayList<Orden_de_Compra>();
+
 		compra.add(new Orden_de_Compra());
-		
+
 		System.out.println(io.toString());
 		io.setCantidad(9000);
 		compra.get(0).agregarItem(io);
 		System.out.println(io.toString());
 
-		
-		
-		
-		
 	}
 
 }

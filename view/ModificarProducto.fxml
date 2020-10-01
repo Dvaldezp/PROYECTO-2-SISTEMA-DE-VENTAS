@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorProducto">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
@@ -41,7 +41,7 @@
             <Font name="System Bold Italic" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="btnsalir" layoutX="464.0" layoutY="560.0" mnemonicParsing="false" onAction="#validarIngreso" prefHeight="27.0" prefWidth="98.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="btnsalir" layoutX="464.0" layoutY="560.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="98.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

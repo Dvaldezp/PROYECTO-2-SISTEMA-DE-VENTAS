@@ -116,11 +116,9 @@ public class ControladorMenu {
 	}
 
 	public void validarEliminarClienteEmpre(ActionEvent actionEvent) {
-		
 
 		try {
-			
-			
+
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EliminarClientedeempresa.fxml"));
 			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/EliminarClientedeempresa.fxml"));
 			Stage stage = new Stage();
@@ -136,6 +134,7 @@ public class ControladorMenu {
 			// TODO: handle exception
 		}
 	}
+
 	public void buscarClienteIndi(ActionEvent actionEvent) {
 
 		try {
@@ -156,7 +155,7 @@ public class ControladorMenu {
 		}
 
 	}
-	
+
 	public void buscarClienteEmpre(ActionEvent actionEvent) {
 
 		try {
@@ -177,8 +176,7 @@ public class ControladorMenu {
 		}
 
 	}
-	
-	
+
 	public void agregarClienteIndi(ActionEvent actionEvent) {
 
 		try {
@@ -199,13 +197,246 @@ public class ControladorMenu {
 		}
 
 	}
-	
+
 	public void agregarClienteEmpre(ActionEvent actionEvent) {
 
 		try {
 
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AgregarClientedeempresa.fxml"));
 			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/AgregarClientedeempresa.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void agregarProducto(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AgregarProducto.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/AgregarProducto.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void buscarFactura(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("BuscarFacturas.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/BuscarFacturas.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void buscarProducto(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("BuscarProducto.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/BuscarProducto.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void crearFactura(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CrearFacturas.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/CrearFacturas.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void eliminarProducto(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EliminarProducto.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/EliminarProducto.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void historialCompra(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Historialdecompra.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Historialdecompra.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void imprimirFactura(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ImprimirFacturas.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/ImprimirFacturas.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void ingresarFactura(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("IngresarFactura.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/IngresarFactura.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+	public void realizarOC(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("OrdendeCompra.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/OrdendeCompra.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	
+	public void verfacturas(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("VerFacturas.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/VerFacturas.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	
+	public void verProducto(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("VerProducto.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/VerProducto.fxml"));
 			Stage stage = new Stage();
 
 			ControladorVerCliente controlador1 = fxmlLoader.getController();

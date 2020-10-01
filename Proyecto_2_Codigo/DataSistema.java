@@ -1,12 +1,13 @@
 package Proyecto_2_Codigo;
 
 import java.util.ArrayList;
+import java.util.Date;
 
-import javafx.beans.property.SimpleStringProperty;
 
 public class DataSistema {
+
 	
-		
+
 	public static ArrayList<Cliente> clientes = new ArrayList<Cliente>(8) {
 		{
 			add(new Cliente_Individual("Edy", "Chay", "Lote 43", "208558775"));
@@ -49,5 +50,13 @@ public class DataSistema {
 
 		}
 	};
+
+
+	
+	
+
+	public static ArrayList<Cliente> getClientes() {
+		return clientes;
+	}
 
 }

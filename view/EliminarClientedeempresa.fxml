@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorEliminarClienteEmpre">
+<Pane fx:id="buscar" onDragDetected="#buscar" prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorEliminarClienteEmpre">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
@@ -51,8 +51,8 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="44.0" layoutY="224.0" prefHeight="25.0" prefWidth="103.0" />
-      <Button layoutX="369.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Eliminar">
+      <TextField fx:id="txtcodigo" layoutX="44.0" layoutY="224.0" prefHeight="25.0" prefWidth="103.0" />
+      <Button fx:id="eliminar" layoutX="369.0" layoutY="395.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="103.0" text="Eliminar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
@@ -62,5 +62,10 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="buscar" layoutX="179.0" layoutY="222.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="103.0" text="Buscar">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

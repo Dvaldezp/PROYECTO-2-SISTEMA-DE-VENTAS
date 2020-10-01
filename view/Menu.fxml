@@ -69,25 +69,25 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Factura">
             <items>
-                  <MenuItem fx:id="validarSalirr31" mnemonicParsing="false" text="Realizar factura" />
-                  <MenuItem fx:id="validarSalirr3" mnemonicParsing="false" text="Ver todas las facturas" />
-                  <MenuItem fx:id="validarSalirr12" mnemonicParsing="false" text="Buscar Factura" />
-                  <MenuItem fx:id="validarSalirr21" mnemonicParsing="false" text="Imprimir Factura" />
+                  <MenuItem fx:id="crearFactura" mnemonicParsing="false" onAction="#crearFactura" text="Realizar factura" />
+                  <MenuItem fx:id="verfacturas" mnemonicParsing="false" onAction="#verfacturas" text="Ver todas las facturas" />
+                  <MenuItem fx:id="buscarFactura" mnemonicParsing="false" onAction="#buscarFactura" text="Buscar Factura" />
+                  <MenuItem fx:id="imprimirFactura" mnemonicParsing="false" onAction="#imprimirFactura" text="Imprimir Factura" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Inventario">
             <items>
-              <MenuItem mnemonicParsing="false" text="Ver todos los producto" />
+              <MenuItem fx:id="verProducto" mnemonicParsing="false" onAction="#verProducto" text="Ver todos los producto" />
                   <MenuItem mnemonicParsing="false" text="Modificar Producto" />
-                  <MenuItem mnemonicParsing="false" text="Agregar producto" />
-                  <MenuItem mnemonicParsing="false" text="Eliminar Producto" />
-                  <MenuItem mnemonicParsing="false" text="Ver Producto a detalle" />
+                  <MenuItem fx:id="agregarProducto" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar producto" />
+                  <MenuItem fx:id="eliminarProducto" mnemonicParsing="false" onAction="#eliminarProducto" text="Eliminar Producto" />
+                  <MenuItem fx:id="buscarProducto" mnemonicParsing="false" onAction="#buscarProducto" text="Ver Producto a detalle" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Compras">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Realizar orden de compra" />
-                  <MenuItem mnemonicParsing="false" text="Ver todas las compras" />
+                  <MenuItem fx:id="realizarOC" mnemonicParsing="false" onAction="#realizarOC" text="Realizar orden de compra" />
+                  <MenuItem fx:id="historialCompra" mnemonicParsing="false" onAction="#historialCompra" text="Ver todas las compras" />
                   <MenuItem mnemonicParsing="false" text="Buscar orden de compra" />
                   <MenuItem mnemonicParsing="false" text="Confirmar compra" />
                   <MenuItem mnemonicParsing="false" text="Imprimir orden de compra" />
