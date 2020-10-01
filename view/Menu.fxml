@@ -72,7 +72,6 @@
                   <MenuItem fx:id="crearFactura" mnemonicParsing="false" onAction="#crearFactura" text="Realizar factura" />
                   <MenuItem fx:id="verfacturas" mnemonicParsing="false" onAction="#verfacturas" text="Ver todas las facturas" />
                   <MenuItem fx:id="buscarFactura" mnemonicParsing="false" onAction="#buscarFactura" text="Buscar Factura" />
-                  <MenuItem fx:id="imprimirFactura" mnemonicParsing="false" onAction="#imprimirFactura" text="Imprimir Factura" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Inventario">

@@ -98,6 +98,12 @@ public class Facturacion extends OrdenDeVenta {
 
 	@Override
 	public String toString() {
+		
+		for (int i = 0; i < DataFacturas.factura.size(); i++) {
+			
+			DataFacturas.factura.get(i).getTotalOrden();
+			
+		}
 
 		String tmp = "NUMERO DE FACTURA= " + numeroDeFactura + "\n";
 		tmp = tmp + "Cliente=" + getCliente().toString() + "\n";
@@ -105,7 +111,7 @@ public class Facturacion extends OrdenDeVenta {
 		for (ItemOrden itemOrden : colecItem) {
 			tmp = tmp + itemOrden.toString() + ", Subtotal de linea es=" + itemOrden.getTotalItem() + "\n";
 		}
-
+		
 		tmp = tmp + "total de factura es =" + totalDeFacturacion;
 		return tmp;
 	}

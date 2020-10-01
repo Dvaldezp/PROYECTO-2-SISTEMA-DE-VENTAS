@@ -79,7 +79,7 @@ public class Orden_de_Compra{
 			tmp = tmp + itemOrden.toString() + ", Subtotal de linea es=" + itemOrden.getTotalItem() + "\n";
 		}
 		
-		getTotalOrden();
+		
 
 		tmp = tmp + "total de orden de compra es =" + totalOrdeCompra;
 		return tmp;
