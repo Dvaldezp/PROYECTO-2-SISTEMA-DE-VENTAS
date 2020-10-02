@@ -8,6 +8,12 @@ import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+/**
+ * esta clase menu, es el principal que se encarga de mostrar el menu 
+ * @author Edy Chay 
+ * @author Daniel Valdez
+ *
+ */
 public class MainFinal extends Application{
 	
 	@Override
@@ -21,7 +27,11 @@ public class MainFinal extends Application{
 		stage.setScene(scene);
 		stage.show();
 	}
-
+	/**
+	 * Constructor para mostar el menu principal 
+	 * @param args
+	 */
+	
 	public static void main(String[] args) {
 		launch(args);
 	}

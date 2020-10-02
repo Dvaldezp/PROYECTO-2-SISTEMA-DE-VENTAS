@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Esta clase llevara el control de las facturas tanto para clientes individuales como para empresa
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class Facturacion extends OrdenDeVenta {
 
 	private List<ItemOrden> colecItem;
@@ -21,7 +27,11 @@ public class Facturacion extends OrdenDeVenta {
 		colecItem = new ArrayList();
 		numeroDeFactura = siguienteIdF();
 	}
-
+	/**
+	 * constructor para la clase factura 
+	 * @param i
+	 */
+	
 	public void agregarItem(ItemOrden i) {
 		if(liberado==true) {
 		if (verificaitem(i) == true) {
@@ -30,7 +40,11 @@ public class Facturacion extends OrdenDeVenta {
 			rebajarInventario(i);
 
 		} }else {
-
+			
+			/**
+			 * Agregara el item para saber si se cumple el metodo  
+			 */
+			
 			System.out.println(
 					"NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL, el codigo es --> "
 							+ i.getProducto().getIdProducto());
@@ -64,7 +78,11 @@ public class Facturacion extends OrdenDeVenta {
 			}
 
 		}
-
+	
+		/**
+		 * verificaitem, verificara si existe el objeto
+		 */
+		
 		return veri;
 
 	}
@@ -84,7 +102,11 @@ public class Facturacion extends OrdenDeVenta {
 
 		}
 	}
-
+	
+	/**
+	 * realizara el calculo de la rebaja al inventario  
+	 */
+	
 	public double getTotalOrden() {
 
 		totalDeFacturacion = 0;
@@ -93,7 +115,11 @@ public class Facturacion extends OrdenDeVenta {
 		}
 
 		return totalDeFacturacion;
-
+		
+		/**
+		 * regrega el total de factura 
+		 */
+		
 	}
 
 	@Override
@@ -115,6 +141,10 @@ public class Facturacion extends OrdenDeVenta {
 		tmp = tmp + "total de factura es =" + totalDeFacturacion;
 		return tmp;
 	}
+	
+	/**
+	 * metodo publico para devolver el numero de factura 
+	 */
 
 	public int getNumerodefactura() {
 		return numeroDeFactura;

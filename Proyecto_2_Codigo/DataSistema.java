@@ -3,10 +3,16 @@ package Proyecto_2_Codigo;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * Esta clase sera utilizada para guardar un catalogo de cliente, producto y orden de compra.
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 
 public class DataSistema {
 
-	
+
 
 	public static ArrayList<Cliente> clientes = new ArrayList<Cliente>(8) {
 		{
@@ -21,6 +27,11 @@ public class DataSistema {
 
 		}
 	};
+
+	/**
+	 *  Constructor para un cliente individual
+	 */
+
 
 	public static ArrayList<Producto> productos = new ArrayList<Producto>(8) {
 		{
@@ -37,6 +48,10 @@ public class DataSistema {
 		}
 	};
 
+	/**
+	 *  Constructor para un producto
+	 */
+
 	public static ArrayList<ItemOrden> item = new ArrayList<ItemOrden>(8) {
 		{
 			add(new ItemOrden(1, 5, DataSistema.productos.get(0)));
@@ -50,10 +65,13 @@ public class DataSistema {
 
 		}
 	};
+	
+	/**
+	 *  Constructor para una orden de compra
+	 */
 
 
-	
-	
+
 
 	public static ArrayList<Cliente> getClientes() {
 		return clientes;

@@ -5,6 +5,12 @@ import java.util.Date;
 
 import javafx.scene.chart.PieChart.Data;
 
+/**
+ * Esta clase es un borrador para realizar preubas momentanias 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class MainMomentaneo {
 
 	public static void main(String[] args) {
