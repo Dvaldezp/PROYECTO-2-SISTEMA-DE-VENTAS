@@ -452,6 +452,27 @@ public class ControladorMenu {
 
 	}
 	
+	public void verClienteEmpresa(ActionEvent actionEvent) {
+
+		try {
+
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("VerClientesempresa.fxml"));
+			Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/VerClientesempresa.fxml"));
+			Stage stage = new Stage();
+
+			ControladorVerCliente controlador1 = fxmlLoader.getController();
+
+			Scene scene = new Scene(layout, 800, 600);
+			stage.setTitle("Prueba");
+			stage.setScene(scene);
+			stage.show();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
 	
 
 }

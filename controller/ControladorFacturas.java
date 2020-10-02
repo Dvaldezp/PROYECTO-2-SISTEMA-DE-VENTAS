@@ -1,7 +1,9 @@
 package controller;
 
 import Proyecto_2_Codigo.DataFacturas;
+import Proyecto_2_Codigo.DataSistema;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class ControladorFacturas {
@@ -26,6 +28,29 @@ public class ControladorFacturas {
 				}
 
 			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	
+	public TextArea txtfacturas;
+	public void verfacturas(ActionEvent actionEvent) {
+
+		try {
+				
+			String todo="";
+			for (int i = 0; i < DataFacturas.factura.size(); i++) {
+
+				todo = DataFacturas.factura.get(i).toString();
+				txtfacturas.appendText(todo+"\n");
+
+					
+				}
+
+			
 
 		} catch (Exception e) {
 			// TODO: handle exception
