@@ -12,21 +12,21 @@
 
 <AnchorPane prefHeight="413.0" prefWidth="734.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Pane prefHeight="416.0" prefWidth="734.0" style="-fx-background-color: #bf2c3d;">
+      <Pane prefHeight="593.0" prefWidth="744.0" style="-fx-background-color: #bf2c3d;">
          <children>
-            <Label layoutX="85.0" layoutY="83.0" prefHeight="34.0" prefWidth="85.0" text="Usuario:" textFill="#e4dddd">
+            <Label layoutX="136.0" layoutY="193.0" prefHeight="34.0" prefWidth="85.0" text="Usuario:" textFill="#e4dddd">
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUsuario" layoutX="85.0" layoutY="128.0" />
-            <PasswordField fx:id="txtContrasenia" layoutX="264.0" layoutY="128.0" />
-            <Button layoutX="448.0" layoutY="126.0" mnemonicParsing="false" onAction="#validarIngreso" text="Ingresar">
+            <TextField fx:id="txtUsuario" layoutX="132.0" layoutY="256.0" />
+            <PasswordField fx:id="txtContrasenia" layoutX="338.0" layoutY="256.0" />
+            <Button layoutX="520.0" layoutY="253.0" mnemonicParsing="false" onAction="#validarIngreso" text="Ingresar">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="264.0" layoutY="83.0" prefHeight="34.0" prefWidth="135.0" text="Contraseña:" textFill="#ebe1e1">
+            <Label layoutX="345.0" layoutY="199.0" prefHeight="34.0" prefWidth="135.0" text="Contraseña:" textFill="#ebe1e1">
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFactura">
+<Pane prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFacturas">
    <children>
       <ImageView layoutX="395.0" layoutY="31.0">
          <image>
@@ -26,38 +25,13 @@
             <Image url="@../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
          </image>
       </ImageView>
-      <TableView layoutX="100.0" layoutY="238.0" prefHeight="232.0" prefWidth="794.0">
-        <columns>
-          <TableColumn fx:id="idicodigo" prefWidth="63.0" text="Lineas" />
-          <TableColumn prefWidth="118.0" text="Cod. Producto" />
-            <TableColumn prefWidth="152.0" text="Descripcion" />
-            <TableColumn minWidth="0.0" prefWidth="88.0" text="Tipo" />
-            <TableColumn minWidth="0.0" prefWidth="105.0" text="Linea" />
-            <TableColumn minWidth="0.0" prefWidth="173.0" text="Cantidad" />
-            <TableColumn minWidth="0.0" prefWidth="90.0" text="Sub- Total" />
-        </columns>
-      </TableView>
-      <TextField layoutX="102.0" layoutY="185.0" prefHeight="25.0" prefWidth="443.0" />
-      <Label layoutX="103.0" layoutY="74.0" text="Ingrese el No. De Factura">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="100.0" layoutY="152.0" text="Nombre del Cliente">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
       <Label layoutX="39.0" layoutY="31.0" prefHeight="38.0" prefWidth="227.0" text="Facturas Especificas">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="103.0" layoutY="106.0" prefHeight="25.0" prefWidth="117.0" />
-      <TableView layoutX="715.0" layoutY="486.0" prefHeight="61.0" prefWidth="179.0">
-        <columns>
-          <TableColumn prefWidth="199.0" text="TOTAL" />
-        </columns>
-      </TableView>
+      <TextArea fx:id="txtfacturas" layoutX="78.0" layoutY="171.0" prefHeight="297.0" prefWidth="893.0" />
+      <Button fx:id="verfacturas" layoutX="426.0" layoutY="106.0" mnemonicParsing="false" onAction="#verfacturas" prefHeight="25.0" prefWidth="167.0" text="Ver todas las facturas" />
+      <Button layoutX="426.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Regresar" />
    </children>
 </Pane>
