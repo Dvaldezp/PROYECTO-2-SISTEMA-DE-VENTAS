@@ -5,12 +5,25 @@ import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
+/**
+ * Esta clase permite buscar el cliente empresa mediante el codigo
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class ControladorBuscarClienteEmpre {
 	
 	public TextField txtcodigo;
 	
+	/**
+	 * Constructor que controla la busqueda del ciente empresa para que se pueda usar la informacion luego
+	 * @param actionEvent
+	 */
+	
 	public void buscar(ActionEvent actionEvent) {
-
+		/**
+		 * Este metodo realizara la busqueda del cliente para luego poder mostrarla
+		 */
 		try {
 
 			for (int i = 0; i < DataSistema.clientes.size(); i++) {

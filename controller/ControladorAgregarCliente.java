@@ -6,7 +6,12 @@ import Proyecto_2_Codigo.DataSistema;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
-
+/**
+ * Esta clase controlara la parte grafica para poder inprimir toda la informacion que se agregara del cliente 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class ControladorAgregarCliente {
 
 	public TextField txtnombre;
@@ -15,9 +20,15 @@ public class ControladorAgregarCliente {
 	public TextField txtdpi;
 	public TextField txtcontacto;
 	public TextField txtdescuento;
-
+	
+	/**
+	 * Se estara agregando la informacion necesaria para luego poder imprimirla 
+	 * @param actionEvent
+	 */
+	
 	public void agregar(ActionEvent actionEvent) {
 
+	
 		DataSistema.clientes.add(new Cliente_Individual(txtnombre.getText(), txtapellido.getText(),
 				txtdireccion.getText(), txtdpi.getText()));
 
@@ -27,7 +38,10 @@ public class ControladorAgregarCliente {
 		txtdpi.setText("");
 
 	}
-	
+	/**
+	 * De igual manera le solicita al usuario que ingrese la informacion que se requiere para luego poder mostrarla
+	 * @param actionEvent
+	 */
 	
 	public void agregar1(ActionEvent actionEvent) {
 
