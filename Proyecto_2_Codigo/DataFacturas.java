@@ -5,9 +5,23 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/**
+ * Esta clase guardara datos para la Factura, tanto como para individual Y empresa 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class DataFacturas {
 
+	/**
+	 * Constructor para guardar todo tipo de facturas
+	 * 
+	 */
+	
 	public static Calendar c1 = GregorianCalendar.getInstance();
+	/**
+	 * Tomara la factura para luego imprimirla e indicar la hora que se realizo 
+	 */
 
 	public static ArrayList<Facturacion> factura = new ArrayList<Facturacion>(8) {
 

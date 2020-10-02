@@ -2,6 +2,13 @@ package Proyecto_2_Codigo;
 
 import java.util.ArrayList;
 
+/**
+ * Esta clase sera utilizada para la informacion del cliente individual
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
+
 public class DataSistemaCliente {
 
 	public static ArrayList<Cliente> clientes = new ArrayList<Cliente>(8) {
@@ -17,5 +24,8 @@ public class DataSistemaCliente {
 
 		}
 	};
+	/**
+	 * constructor para cliente individual 
+	 */
 
 }
