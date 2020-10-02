@@ -5,11 +5,28 @@ import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
+/**
+ * Esta clase permitira eliminar a un cliente de empresa
+ * 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
+
 public class ControladorEliminarClienteEmpre {
 
 	public TextField txtcodigo;
 
+	/**
+	 * Constructor que eliminara al cliente seleccionado
+	 * 
+	 * @param actionEvent
+	 */
 	public void buscar(ActionEvent actionEvent) {
+
+		/**
+		 * Metodo que buscara al cliente empresa para poder eliminarlo
+		 */
 
 		try {
 
@@ -39,6 +56,9 @@ public class ControladorEliminarClienteEmpre {
 	}
 
 	public void eliminar(ActionEvent actionEvent) {
+		/**
+		 * eliminara al cliente mediante un codigo para saber cual eliminar
+		 */
 
 		try {
 
