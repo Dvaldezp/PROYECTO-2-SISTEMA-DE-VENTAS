@@ -19,6 +19,12 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import javax.swing.*;
+/**
+ * login controller, es la que nos permite ingresar el usuario
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 
 public class LoginController extends Application {
 

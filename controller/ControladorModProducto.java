@@ -5,6 +5,13 @@ import Proyecto_2_Codigo.TipoProducto;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
+/**
+ * Esta clase controlador modifica los productos ingresados por el cliente
+ * 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class ControladorModProducto {
 
 	public TextField txtcodigo;
@@ -13,6 +20,12 @@ public class ControladorModProducto {
 	public TextField txttipo;
 	public static int prueba;
 
+	/**
+	 * controlador modificar producto, busca producto y al imprimirlos busca settear
+	 * para poder mostrarlos
+	 * 
+	 * @param actionEvent
+	 */
 	public void buscarproducto1(ActionEvent actionEvent) {
 
 		try {
@@ -36,7 +49,7 @@ public class ControladorModProducto {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-
+//cierre del metodo 
 	}
 
 	public void modificar1(ActionEvent actionEvent) {
