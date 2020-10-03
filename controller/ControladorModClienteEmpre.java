@@ -5,6 +5,14 @@ import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
+/**
+ * Esta clase es un contralador de fxml, modifica cliente empresa
+ * 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
+
 public class ControladorModClienteEmpre {
 
 	public TextField txtcodigo;
@@ -18,8 +26,19 @@ public class ControladorModClienteEmpre {
 	String direccion;
 	int descu;
 
-	public void buscarCliente(ActionEvent actionEvent) {
+	/**
+	 * controlador este parametro nos permite modificar a clinte empresa, pero no
+	 * podemos modificar el id cliente empresa
+	 * 
+	 * @param actionEvent
+	 */
 
+	public void buscarCliente(ActionEvent actionEvent) {
+		/**
+		 * buscar cliente es el boton de buscar cliente fxml. de modifcar cliente
+		 * emrpresa ya que al buscar un cliente este mismo los guarada en memoria para
+		 * poderlos editar
+		 */
 		boolean prueba = false;
 		try {
 
@@ -63,11 +82,14 @@ public class ControladorModClienteEmpre {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-
+//cierre del metodo
 	}
 
 	public void modificaCliente(ActionEvent actionEvent) {
-
+		/**
+		 * este es del boton modificar cliente, ya que los campos que fueron ingresados
+		 * los datos, estos setiaran a cliente empresa
+		 */
 		nombre1 = txtnombre.getText();
 		contacto = txtcontacto.getText();
 		direccion = txtdireccion.getText();
@@ -115,5 +137,5 @@ public class ControladorModClienteEmpre {
 		}
 
 	}
-
+// cierre de metodo 
 }

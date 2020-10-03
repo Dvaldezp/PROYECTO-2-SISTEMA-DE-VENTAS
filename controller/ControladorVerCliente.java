@@ -13,11 +13,20 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-
+/**
+ * Esta clase controlador ver cliente 
+ * @author Edy Chay
+ * @author Daniel Valdez
+ *
+ */
 public class ControladorVerCliente {
 
 	public TextArea verDato;
 	
+	/**
+	 * controlador ver cliente, al dar click al boton mostrara los datos del cliente 
+	 * @param actionEvent
+	 */
 
 	public void cargarTabla(ActionEvent actionEvent) {
 
