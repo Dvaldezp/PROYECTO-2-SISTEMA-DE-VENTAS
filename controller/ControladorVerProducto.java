@@ -1,6 +1,9 @@
 package controller;
 
+import com.sun.javafx.application.PlatformImpl;
+
 import Proyecto_2_Codigo.DataSistema;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -31,5 +34,8 @@ public class ControladorVerProducto {
 			// TODO: handle exception
 		}
 	}
+	
+	
+
 
 }

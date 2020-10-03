@@ -3,6 +3,7 @@ package controller;
 import Proyecto_2_Codigo.DataSistema;
 import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
@@ -14,6 +15,7 @@ import javafx.scene.control.TextField;
 public class ControladorEliminarProducto {
 
 	public TextField txtcodigo;
+	public TextArea txtborrado;
 
 	/**
 	 * Constructor para eliminar el producto
@@ -29,14 +31,18 @@ public class ControladorEliminarProducto {
 		try {
 
 			for (int i = 0; i < DataSistema.productos.size(); i++) {
+				
 
 				int num = Integer.parseInt(txtcodigo.getText());
 
 				if (num == DataSistema.productos.get(i).getIdProducto()) {
+					
+					Object obj=DataSistema.productos.get(i);
 
 					DataSistema.productos.remove(i);
 
-					txtcodigo.setText("PRODDUCTO ELIMINADO");
+					txtborrado.appendText("ESTO FUE ELIMINADO"+"\n");
+					txtborrado.appendText(obj.toString());
 				}
 
 			}

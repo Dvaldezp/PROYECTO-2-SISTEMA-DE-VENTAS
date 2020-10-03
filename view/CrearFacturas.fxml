@@ -2,8 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -27,37 +26,29 @@
             <Image url="@../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
          </image>
       </ImageView>
-      <TableView layoutX="53.0" layoutY="349.0" prefHeight="180.0" prefWidth="596.0">
-        <columns>
-          <TableColumn fx:id="idicodigo" prefWidth="118.0" text="Codigos" />
-          <TableColumn prefWidth="172.0" text="Descripcion" />
-            <TableColumn prefWidth="140.0" text="Cantidad" />
-            <TableColumn minWidth="0.0" prefWidth="162.0" text="Sub-Total" />
-        </columns>
-      </TableView>
       <Button fx:id="facturar" layoutX="139.0" layoutY="553.0" mnemonicParsing="false" onAction="#facturar" prefHeight="14.0" prefWidth="163.0" text="Facturar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Button>
-      <TextField fx:id="txtcodpro" layoutX="103.0" layoutY="185.0" />
-      <Label layoutX="103.0" layoutY="74.0" text="Ingrese el codigo del cliente">
+      <TextField fx:id="txtcodpro" layoutX="103.0" layoutY="259.0" />
+      <Label layoutX="117.0" layoutY="88.0" text="Ingrese el codigo del cliente">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="152.0" text="Ingrese codigo a facturar">
+      <Label layoutX="103.0" layoutY="225.0" text="Ingrese codigo a facturar">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcantidad" layoutX="103.0" layoutY="254.0" />
+      <TextField fx:id="txtcantidad" layoutX="379.0" layoutY="259.0" />
       <Label layoutX="39.0" layoutY="31.0" text="Crear Factura">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcodig" layoutX="103.0" layoutY="106.0" prefHeight="25.0" prefWidth="117.0" />
-      <Label layoutX="100.0" layoutY="218.0" text="Cantidad">
+      <TextField fx:id="txtcodig" layoutX="119.0" layoutY="124.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label layoutX="430.0" layoutY="225.0" text="Cantidad">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
@@ -67,19 +58,20 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="470.0" layoutY="537.0" prefHeight="61.0" prefWidth="179.0">
-        <columns>
-          <TableColumn prefWidth="199.0" text="TOTAL" />
-        </columns>
-      </TableView>
-      <Button fx:id="agregarCliente" layoutX="281.0" layoutY="104.0" mnemonicParsing="false" onAction="#agregarCliente" prefHeight="14.0" prefWidth="163.0" text="Agregar Cliente">
+      <Button fx:id="agregarCliente" layoutX="395.0" layoutY="110.0" mnemonicParsing="false" onAction="#agregarCliente" prefHeight="14.0" prefWidth="163.0" text="Agregar Cliente">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="agregarItems" layoutX="292.0" layoutY="183.0" mnemonicParsing="false" onAction="#agregarItems" prefHeight="14.0" prefWidth="163.0" text="Agregar Items">
+      <Button fx:id="agregarItems" layoutX="583.0" layoutY="257.0" mnemonicParsing="false" onAction="#agregarItems" prefHeight="14.0" prefWidth="163.0" text="Agregar Items">
          <font>
             <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtmostrar" layoutX="45.0" layoutY="326.0" prefHeight="200.0" prefWidth="748.0" />
+      <Button layoutX="404.0" layoutY="549.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+         <font>
+            <Font name="System Bold" size="17.0" />
          </font>
       </Button>
    </children>

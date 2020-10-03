@@ -3,6 +3,7 @@ package controller;
 import Proyecto_2_Codigo.DataSistema;
 import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
@@ -16,6 +17,7 @@ import javafx.scene.control.TextField;
 public class ControladorEliminarClienteEmpre {
 
 	public TextField txtcodigo;
+	public TextArea txtmostrar;
 
 	/**
 	 * Constructor que eliminara al cliente seleccionado
@@ -42,6 +44,7 @@ public class ControladorEliminarClienteEmpre {
 					nombre = Utilerias.getNombreClase(DataSistema.clientes.get(i).getClass());
 
 					if (nombre.equals("Cliente_Empresa")) {
+						txtmostrar.appendText(DataSistema.clientes.get(i).toString());
 
 					}
 
@@ -76,6 +79,7 @@ public class ControladorEliminarClienteEmpre {
 					if (nombre.equals("Cliente_Empresa")) {
 
 						DataSistema.clientes.remove(i);
+						txtmostrar.setText("ELIMINADO");
 					}
 
 				}

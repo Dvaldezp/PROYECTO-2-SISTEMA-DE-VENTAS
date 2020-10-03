@@ -8,6 +8,7 @@ import Proyecto_2_Codigo.DataSistema;
 import Proyecto_2_Codigo.Facturacion;
 import Proyecto_2_Codigo.ItemOrden;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
@@ -24,6 +25,7 @@ public class ControladorCrearFactura {
 	public TextField txtcodpro;
 	public TextField txtcantidad;
 	public static int psosicion;
+	public TextArea txtmostrar;
 
 	/**
 	 * Constructor para la creacion de la factura
@@ -47,6 +49,8 @@ public class ControladorCrearFactura {
 					DataFacturas.factura.add(new Facturacion(c1.getTime(), DataSistema.clientes.get(i)));
 					ControladorCrearFactura.psosicion = DataFacturas.factura.size() - 1;
 					System.out.println("hola");
+					
+					txtmostrar.appendText(DataSistema.clientes.get(i).toString()+"\n");
 				}
 				// Cierre del metodo
 
@@ -69,6 +73,11 @@ public class ControladorCrearFactura {
 			System.out.println("SSSSSSSSSSS");
 
 			System.out.println(DataFacturas.factura.get(psosicion).toString());
+			txtmostrar.setText("");
+			txtmostrar.appendText("FACTURA NUEVA ES"+"\n");
+			
+			txtmostrar.appendText(DataFacturas.factura.get(psosicion).toString());
+			
 
 			// cierre del metodo
 
@@ -90,10 +99,11 @@ public class ControladorCrearFactura {
 
 				if (num2 == DataSistema.productos.get(i).getIdProducto()) {
 
-					DataSistema.item.add(
-							new ItemOrden(1, Integer.parseInt(txtcantidad.getText()), DataSistema.productos.get(i)));
+					DataSistema.item.add(new ItemOrden(1, Integer.parseInt(txtcantidad.getText()), DataSistema.productos.get(i)));
 					DataFacturas.factura.get(psosicion).agregarItem(DataSistema.item.get(DataSistema.item.size() - 1));
 					System.out.println("---------------------------------------------");
+					
+					txtmostrar.appendText(DataSistema.productos.get(i).toString()+"\n");
 				}
 
 			}

@@ -27,6 +27,9 @@ public class Facturacion extends OrdenDeVenta {
 		colecItem = new ArrayList();
 		numeroDeFactura = siguienteIdF();
 	}
+	
+	
+	
 	/**
 	 * constructor para la clase factura 
 	 * @param i

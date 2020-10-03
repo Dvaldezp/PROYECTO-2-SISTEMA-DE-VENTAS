@@ -42,7 +42,7 @@ public class LoginController extends Application {
 
 				ControladorMenu controlador = fxmlLoader.getController();
 
-				Scene scene = new Scene(layout, 800, 600);
+				Scene scene = new Scene(layout, 900, 700);
 
 				Stage stage = new Stage();
 				stage.setScene(scene);
