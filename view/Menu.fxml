@@ -77,7 +77,7 @@
           <Menu mnemonicParsing="false" text="Inventario">
             <items>
               <MenuItem fx:id="verProducto" mnemonicParsing="false" onAction="#verProducto" text="Ver todos los producto" />
-                  <MenuItem mnemonicParsing="false" text="Modificar Producto" />
+                  <MenuItem fx:id="modificarproducto" mnemonicParsing="false" onAction="#modificarproducto" text="Modificar Producto" />
                   <MenuItem fx:id="agregarProducto" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar producto" />
                   <MenuItem fx:id="eliminarProducto" mnemonicParsing="false" onAction="#eliminarProducto" text="Eliminar Producto" />
                   <MenuItem fx:id="buscarProducto" mnemonicParsing="false" onAction="#buscarProducto" text="Ver Producto a detalle" />

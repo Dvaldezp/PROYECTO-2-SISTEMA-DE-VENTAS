@@ -66,12 +66,15 @@ public class DataSistema {
 		}
 	};
 	
+	
+
+	
 	/**
 	 *  Constructor para una orden de compra
 	 */
 
 
-
+	
 
 	public static ArrayList<Cliente> getClientes() {
 		return clientes;

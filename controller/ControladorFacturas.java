@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
 public class ControladorFacturas {
 
 	public TextField txtcodigo;
-	public TextField txtcampo;
+	
 
 	/**
 	 * Constructor que permitira la creacion de la factura
@@ -23,30 +23,7 @@ public class ControladorFacturas {
 	 * @param actionEvent
 	 */
 
-	public void buscar(ActionEvent actionEvent) {
-
-		/**
-		 * metodo que buscara los datos para luego imprimirlos en la factua
-		 */
-		try {
-
-			for (int i = 0; i < DataFacturas.factura.size(); i++) {
-
-				int num = Integer.parseInt(txtcodigo.getText());
-
-				if (num == DataFacturas.factura.get(i).getNumerodefactura()) {
-
-					txtcampo.setText(DataFacturas.factura.get(i).toString());
-
-				}
-
-			}
-
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-	}
+	
 
 	public TextArea txtfacturas;
 

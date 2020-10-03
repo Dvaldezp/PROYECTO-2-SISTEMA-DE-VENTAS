@@ -3,6 +3,7 @@ package controller;
 import Proyecto_2_Codigo.DataSistema;
 import Proyecto_2_Codigo.Utilerias;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 /**
  * Esta clase permite buscar el cliente individual mediante el codigo
@@ -13,6 +14,7 @@ import javafx.scene.control.TextField;
 public class ControladorBuscarClienteIndi {
 	
 	public TextField txtcodigo;
+	public TextArea txtmostrar;
 	
 	/**
 	 * Constructor que controla la busqueda del ciente individual para que se pueda usar la informacion luego
@@ -26,7 +28,7 @@ public class ControladorBuscarClienteIndi {
 		 */
 		
 		try {
-
+			boolean prueba = false;
 			for (int i = 0; i < DataSistema.clientes.size(); i++) {
 
 				int num = Integer.parseInt(txtcodigo.getText());
@@ -41,10 +43,15 @@ public class ControladorBuscarClienteIndi {
 					if (nombre.equals("Cliente_Individual")) {
 						
 					System.out.println(DataSistema.clientes.get(i).toString());
+					txtmostrar.appendText(DataSistema.clientes.get(i).toString());
+					prueba = true;
 					}
 
 				}
-
+				
+				if (prueba == false) {
+					txtmostrar.setText("");
+				}
 				
 
 			}
