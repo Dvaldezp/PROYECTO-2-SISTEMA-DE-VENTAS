@@ -65,6 +65,7 @@
                   <MenuItem fx:id="buscarClienteEmpre" mnemonicParsing="false" onAction="#buscarClienteEmpre" text="Buscar Cliente Empresa" />
                   <MenuItem fx:id="agregarClienteIndi" mnemonicParsing="false" onAction="#agregarClienteIndi" text="Agregar Cliente Individual" />
                   <MenuItem fx:id="agregarClienteEmpre" mnemonicParsing="false" onAction="#agregarClienteEmpre" text="Agregar Cliente Empresa" />
+                  <MenuItem fx:id="prueba" mnemonicParsing="false" onAction="#prueba" text="Prueba" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Factura">

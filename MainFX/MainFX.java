@@ -21,9 +21,9 @@ public class MainFX extends Application {
 
 	public void start(Stage stage) throws Exception {
 		System.out.println(getClass().getResource("/view/Usuario.fxml"));
-		Pane layout = (Pane) FXMLLoader.load(getClass().getResource("/view/Usuario.fxml"));
+		Pane root = (Pane) FXMLLoader.load(getClass().getResource("/view/Usuario.fxml"));
 
-		Scene scene = new Scene(layout, 900, 700);
+		Scene scene = new Scene(root, 900, 700);
 
 		stage.setTitle("MENU");
 		stage.setScene(scene);

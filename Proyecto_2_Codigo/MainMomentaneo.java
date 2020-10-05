@@ -164,6 +164,11 @@ public class MainMomentaneo {
 		
 		//////////////////
 		System.out.println("*****************");
+		DataFacturas.factura.get(5).agregarItem(io);
+		DataFacturas.factura.get(5).agregarItem(io);
+		System.out.println(DataFacturas.factura.get(5).toString());
+		
+		
 		DataFacturas.factura.get(0).agregarItem(io);
 		DataFacturas.factura.get(0).agregarItem(io);
 		System.out.println(DataFacturas.factura.get(0).toString());
