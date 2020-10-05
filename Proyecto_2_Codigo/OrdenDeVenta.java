@@ -16,7 +16,7 @@ public class OrdenDeVenta {
 
 
 	private int idOrdenV;
-	private Cliente cliente;
+	protected Cliente cliente;
 	private ItemOrden item1;
 	private ItemOrden item2;
 	private Date fechaorden;
@@ -27,7 +27,7 @@ public class OrdenDeVenta {
 	private int diasEnvio;
 	private static int sigIdOrden = 3000;
 	
-	/**
+	/**hola como ffll
 	 * regresa todas la variables 
 	 * @return
 	 */
@@ -207,6 +207,10 @@ public class OrdenDeVenta {
 
 		return item1.getTotalItem() + item2.getTotalItem();
 
+	}
+	public Cliente getClassCliente() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

@@ -5,18 +5,45 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Esta clase llevara el control de las facturas tanto para clientes individuales como para empresa
+ * Esta clase llevara el control de las facturas tanto para clientes
+ * individuales como para empresa
+ * 
  * @author Edy Chay
  * @author Daniel Valdez
  *
  */
 public class Facturacion extends OrdenDeVenta {
 
+	public double getTotalDeFacturacion() {
+		return totalDeFacturacion;
+	}
+
+	public void setTotalDeFacturacion(double totalDeFacturacion) {
+		this.totalDeFacturacion = totalDeFacturacion;
+	}
+
+	public int getNumeroDeFactura() {
+		return numeroDeFactura;
+	}
+
+	public void setNumeroDeFactura(int numeroDeFactura) {
+		this.numeroDeFactura = numeroDeFactura;
+	}
+
 	private List<ItemOrden> colecItem;
 	private double totalDeFacturacion;
 	private int numeroDeFactura;
 	private static int sigIdFactura = 70000;
-	private boolean liberado=true;
+	private boolean liberado = true;
+	private String nombreCliente=getClassCliente().getNombreCliente();
+
+	public String getNombreCliente() {
+		return nombreCliente;
+	}
+
+	public void setNombreCliente(String nombreCliente) {
+		this.nombreCliente = nombreCliente;
+	}
 
 	public static int siguienteIdF() {
 		return sigIdFactura++;
@@ -27,41 +54,38 @@ public class Facturacion extends OrdenDeVenta {
 		colecItem = new ArrayList();
 		numeroDeFactura = siguienteIdF();
 	}
-	
-	
-	
+
 	/**
-	 * constructor para la clase factura 
+	 * constructor para la clase factura
+	 * 
 	 * @param i
 	 */
-	
+
 	public void agregarItem(ItemOrden i) {
-		if(liberado==true) {
-		if (verificaitem(i) == true) {
+		if (liberado == true) {
+			if (verificaitem(i) == true) {
 
-			colecItem.add(i);
-			rebajarInventario(i);
+				colecItem.add(i);
+				rebajarInventario(i);
 
-		} }else {
-			
+			}
+		} else {
+
 			/**
-			 * Agregara el item para saber si se cumple el metodo  
+			 * Agregara el item para saber si se cumple el metodo
 			 */
-			
+
 			System.out.println(
 					"NO SE PUEDE AGREGAR ESTE ITEM PORQUE SOBRE PASA EL VALOR DEL STOCK ACTUAL, el codigo es --> "
 							+ i.getProducto().getIdProducto());
 		}
 
 	}
-	
-	
+
 	public void cerrarfactura() {
-		liberado=false;
+		liberado = false;
 		getTotalOrden();
 	}
-	
-	
 
 	public boolean verificaitem(ItemOrden io) {
 		boolean veri = false;
@@ -81,11 +105,11 @@ public class Facturacion extends OrdenDeVenta {
 			}
 
 		}
-	
+
 		/**
 		 * verificaitem, verificara si existe el objeto
 		 */
-		
+
 		return veri;
 
 	}
@@ -105,33 +129,51 @@ public class Facturacion extends OrdenDeVenta {
 
 		}
 	}
-	
+
 	/**
-	 * realizara el calculo de la rebaja al inventario  
+	 * realizara el calculo de la rebaja al inventario
 	 */
-	
+
+	@Override
+	public Cliente getClassCliente() {
+		return cliente;
+	}
+
 	public double getTotalOrden() {
+
+		Double descuento;
+
+		Double descuentototal;
 
 		totalDeFacturacion = 0;
 		for (ItemOrden itemOrden : colecItem) {
 			totalDeFacturacion = totalDeFacturacion + itemOrden.getTotalItem();
 		}
 
-		return totalDeFacturacion;
-		
+		String nombre = Utilerias.getNombreClase(cliente.getClass());
+		if (nombre.equals("Cliente_Empresa")) {
+
+			descuento = (double) cliente.getDescuentoEmpresaPadre() / 100;
+			descuentototal = descuento * totalDeFacturacion;
+		} else {
+			descuentototal = 0.00;
+		}
+
+		return totalDeFacturacion = totalDeFacturacion - descuentototal;
+
 		/**
-		 * regrega el total de factura 
+		 * regrega el total de factura
 		 */
-		
+
 	}
 
 	@Override
 	public String toString() {
-		
+
 		for (int i = 0; i < DataFacturas.factura.size(); i++) {
-			
+
 			DataFacturas.factura.get(i).getTotalOrden();
-			
+
 		}
 
 		String tmp = "NUMERO DE FACTURA= " + numeroDeFactura + "\n";
@@ -140,20 +182,19 @@ public class Facturacion extends OrdenDeVenta {
 		for (ItemOrden itemOrden : colecItem) {
 			tmp = tmp + itemOrden.toString() + ", Subtotal de linea es=" + itemOrden.getTotalItem() + "\n";
 		}
-		
+
 		tmp = tmp + "total de factura es =" + totalDeFacturacion;
 		return tmp;
 	}
-	
+
 	/**
-	 * metodo publico para devolver el numero de factura 
+	 * metodo publico para devolver el numero de factura
 	 */
 
 	public int getNumerodefactura() {
 		return numeroDeFactura;
 	}
 
-	
 	public String verCliente() {
 		return getCliente().getNombreCliente();
 	}
