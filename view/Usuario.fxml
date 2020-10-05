@@ -4,8 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -14,7 +12,7 @@
    <children>
       <Pane prefHeight="561.0" prefWidth="761.0" style="-fx-background-color: #992936;">
          <children>
-            <Label layoutX="136.0" layoutY="193.0" prefHeight="34.0" prefWidth="85.0" text="Usuario:" textFill="#e4dddd">
+            <Label layoutX="132.0" layoutY="210.0" prefHeight="34.0" prefWidth="85.0" text="Usuario:" textFill="#e4dddd">
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>
@@ -23,52 +21,17 @@
             <PasswordField fx:id="txtContrasenia" layoutX="338.0" layoutY="256.0" />
             <Button layoutX="520.0" layoutY="253.0" mnemonicParsing="false" onAction="#validarIngreso" text="Ingresar">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Label layoutX="345.0" layoutY="199.0" prefHeight="34.0" prefWidth="135.0" text="Contraseña:" textFill="#ebe1e1">
+            <Label layoutX="338.0" layoutY="210.0" prefHeight="34.0" prefWidth="135.0" text="Contraseña:" textFill="#ebe1e1">
                <font>
                   <Font name="System Bold" size="21.0" />
                </font>
             </Label>
-            <ImageView layoutX="147.0" layoutY="223.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_honda_48px.png" />
-               </image>
-            </ImageView>
-            <ImageView layoutX="206.0" layoutY="223.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_fiat_48px.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="88.0" layoutY="223.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_bmw_32px.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="48.0" fitWidth="39.0" layoutX="44.0" layoutY="223.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_lexus_48px.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="264.0" layoutY="227.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_porsche_48px.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="314.0" layoutY="223.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_toyota_48px.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="13.0" layoutY="8.0">
-               <image>
-                  <Image url="@../../../../../AppData/Local/Temp/icons8_tesla_model_3_50px.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="85.0" layoutY="55.0" prefHeight="25.0" prefWidth="220.0" text="Ingrese sus Datos para ingresar al Sistema" textFill="#f8eded">
+            <Label layoutX="136.0" layoutY="131.0" prefHeight="34.0" prefWidth="328.0" text="Ingrese sus Datos para ingresar al Sistema" textFill="#f8eded">
                <font>
-                  <Font name="System Italic" size="11.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
          </children>

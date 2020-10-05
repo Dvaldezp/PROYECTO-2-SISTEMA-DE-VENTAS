@@ -4,8 +4,9 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane prefHeight="645.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerTodosClientes">
+<Pane prefHeight="645.0" prefWidth="866.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerTodosClientes">
    <children>
    <TableView fx:id="tblCliente" layoutX="89.0" layoutY="149.0" prefHeight="393.0" prefWidth="696.0">
      <columns>
@@ -15,7 +16,10 @@
             <TableColumn fx:id="tfdireccion" prefWidth="239.0" text="Direccion" />
      </columns>
    </TableView>
-   <Button fx:id="cargarDatos" layoutX="391.0" layoutY="103.0" mnemonicParsing="false" onAction="#cargarDatos" text="Cargar" />
+   <Button fx:id="cargarDatos" layoutX="391.0" layoutY="103.0" mnemonicParsing="false" onAction="#cargarDatos" text="Cargar">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
 
    </children>
 </Pane>

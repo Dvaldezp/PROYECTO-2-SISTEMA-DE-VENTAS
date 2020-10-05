@@ -9,43 +9,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorMenu">
+<Pane prefHeight="624.0" prefWidth="806.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorMenu">
    <children>
-      <ImageView layoutX="395.0" layoutY="31.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_facebook_48px.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="354.0" layoutY="54.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="183.0" layoutY="54.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_purchase_order_32px.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="14.0" layoutY="54.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_user_32px.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="752.0" layoutY="24.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_car_theft_50px.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="503.0" layoutY="525.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_exit_sign_24px.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="544.0" layoutY="54.0">
-         <image>
-            <Image url="@../../../../../../AppData/Local/Temp/icons8_inventory_flow_32px_1.png" />
-         </image>
-      </ImageView>
       <Button fx:id="btnsalir" layoutX="363.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarSalir" prefHeight="25.0" prefWidth="130.0" text="SALIR" textAlignment="CENTER" textFill="#1e1943">
          <font>
             <Font name="System Bold" size="17.0" />
@@ -95,5 +60,15 @@
             </Menu>
         </menus>
       </MenuBar>
+      <ImageView fitHeight="117.0" fitWidth="145.0" layoutX="573.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/Logo%20UMG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="87.0" layoutX="20.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/usuario.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
