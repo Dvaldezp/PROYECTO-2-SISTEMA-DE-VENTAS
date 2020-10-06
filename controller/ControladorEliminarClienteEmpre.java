@@ -30,7 +30,7 @@ public class ControladorEliminarClienteEmpre {
 		 * Metodo que buscara al cliente empresa para poder eliminarlo
 		 */
 
-		try {
+		try {txtmostrar.setText("");
 
 			for (int i = 0; i < DataSistema.clientes.size(); i++) {
 

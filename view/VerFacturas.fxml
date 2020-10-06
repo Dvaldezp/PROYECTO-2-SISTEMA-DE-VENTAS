@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -15,16 +14,15 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextArea fx:id="txtfacturas" layoutX="220.0" layoutY="195.0" prefHeight="94.0" prefWidth="278.0" />
-      <Button fx:id="verfacturas" layoutX="517.0" layoutY="195.0" mnemonicParsing="false" onAction="#verfacturas" prefHeight="27.0" prefWidth="152.0" text="Ver todas las facturas">
+      <Button fx:id="verfacturas" layoutX="517.0" layoutY="156.0" mnemonicParsing="false" onAction="#verfacturas" prefHeight="27.0" prefWidth="152.0" text="Ver todas las facturas">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <TableView fx:id="tblCliente" layoutX="220.0" layoutY="320.0" prefHeight="231.0" prefWidth="404.0">
+      <TableView fx:id="tblCliente" layoutX="93.0" layoutY="251.0" prefHeight="388.0" prefWidth="730.0">
         <columns>
-          <TableColumn fx:id="tfCodigo" prefWidth="65.0" text="Numero" />
-          <TableColumn fx:id="tfNombre" prefWidth="212.0" text="Cliente" />
-            <TableColumn fx:id="tfapellido" prefWidth="124.0" text="Total de Factura" />
+          <TableColumn fx:id="tfCodigo" prefWidth="72.0" text="Numero" />
+          <TableColumn fx:id="tfNombre" prefWidth="473.0" text="Cliente" />
+            <TableColumn fx:id="tfapellido" prefWidth="184.0" text="Total de Factura" />
         </columns>
       </TableView>
    </children>

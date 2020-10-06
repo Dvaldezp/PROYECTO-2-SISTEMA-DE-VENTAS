@@ -29,6 +29,7 @@ public class ControladorEliminarClienteIndi {
 		 * metodo que buscara al cliente individual para poder eliminarlo
 		 */
 		try {
+			txtmostrar.setText("");
 			boolean prueba = false;
 			for (int i = 0; i < DataSistema.clientes.size(); i++) {
 
@@ -45,21 +46,17 @@ public class ControladorEliminarClienteIndi {
 
 						txtmostrar.appendText(DataSistema.clientes.get(i).toString());
 
-						System.out.println("llllllllll");
-
 						prueba = true;
 					}
 					// cierre del metodo
+
 					
-					
-					if (prueba == false) {
-						txtmostrar.setText("");
 					}
 				}
+			if (prueba == false) {
+				txtmostrar.setText("");
 
 			}
-
-			
 
 		} catch (Exception e) {
 			// TODO: handle exception

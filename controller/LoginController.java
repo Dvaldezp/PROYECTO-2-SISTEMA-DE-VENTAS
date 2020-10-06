@@ -32,7 +32,7 @@ public class LoginController extends Application {
 
 	public void validarIngreso(ActionEvent actionEvent) {
 
-		if (txtUsuario.getText().equals("1") && txtContrasenia.getText().equals("1")) {
+		if (txtUsuario.getText().equals("USUARIO1") && txtContrasenia.getText().equals("1")) {
 			// tiene acceso
 			JOptionPane.showMessageDialog(null, "Ingreso Correcto");
 
@@ -56,6 +56,8 @@ public class LoginController extends Application {
 
 			JOptionPane.showMessageDialog(null, "Acceso denegado", "Error", JOptionPane.ERROR_MESSAGE);
 		}
+		
+		
 
 	}
 

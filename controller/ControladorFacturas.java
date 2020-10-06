@@ -31,21 +31,20 @@ public class ControladorFacturas {
 	 * @param actionEvent
 	 */
 
-	public TextArea txtfacturas;
-	
 	public TableView tblCliente;
 	public TableColumn tfCodigo;
 	public TableColumn tfNombre;
 	public TableColumn tfapellido;
-	//public TableColumn tfdireccion;
-	
+	// public TableColumn tfdireccion;
+
 	@FXML
 	public void initialize() {
-		
+
 		tfNombre.setCellValueFactory(new PropertyValueFactory<Facturacion, String>("nombreCliente"));
 		tfCodigo.setCellValueFactory(new PropertyValueFactory<Facturacion, Integer>("numeroDeFactura"));
 		tfapellido.setCellValueFactory(new PropertyValueFactory<Facturacion, Double>("totalDeFacturacion"));
-		//tfdireccion.setCellValueFactory(new PropertyValueFactory<Cliente, String>("direccion"));
+		// tfdireccion.setCellValueFactory(new PropertyValueFactory<Cliente,
+		// String>("direccion"));
 	}
 
 	public void verfacturas(ActionEvent actionEvent) {
@@ -55,18 +54,7 @@ public class ControladorFacturas {
 			/**
 			 * Metodo que realizara la creacion de la factura
 			 */
-			String todo = "";
-			for (int i = 0; i < DataFacturas.factura.size(); i++) {
 
-				todo = DataFacturas.factura.get(i).toString();
-				txtfacturas.appendText(todo + "\n");
-			
-
-			}
-			
-			
-			
-			
 			ObservableList<Facturacion> data = FXCollections.observableArrayList(DataFacturas.factura);
 			tblCliente.setItems(data);
 

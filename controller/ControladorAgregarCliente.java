@@ -7,8 +7,11 @@ import Proyecto_2_Codigo.DataSistema;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+
 /**
- * Esta clase controlara la parte grafica para poder inprimir toda la informacion que se agregara del cliente 
+ * Esta clase controlara la parte grafica para poder inprimir toda la
+ * informacion que se agregara del cliente
+ * 
  * @author Edy Chay
  * @author Daniel Valdez
  *
@@ -22,15 +25,15 @@ public class ControladorAgregarCliente {
 	public TextField txtcontacto;
 	public TextField txtdescuento;
 	public TextArea txtmostrar;
-	
+
 	/**
-	 * Se estara agregando la informacion necesaria para luego poder imprimirla 
+	 * Se estara agregando la informacion necesaria para luego poder imprimirla
+	 * 
 	 * @param actionEvent
 	 */
-	
+
 	public void agregar(ActionEvent actionEvent) {
 
-	
 		DataSistema.clientes.add(new Cliente_Individual(txtnombre.getText(), txtapellido.getText(),
 				txtdireccion.getText(), txtdpi.getText()));
 
@@ -38,27 +41,11 @@ public class ControladorAgregarCliente {
 		txtapellido.setText("");
 		txtdireccion.setText("");
 		txtdpi.setText("");
-		
-		txtmostrar.appendText("AGREGADO"+"\n");
-		txtmostrar.appendText(DataSistema.clientes.get(DataSistema.clientes.size()-1).toString());
+
+		txtmostrar.appendText("AGREGADO" + "\n");
+		txtmostrar.appendText(DataSistema.clientes.get(DataSistema.clientes.size() - 1).toString());
 
 	}
-	/**
-	 * De igual manera le solicita al usuario que ingrese la informacion que se requiere para luego poder mostrarla
-	 * @param actionEvent
-	 */
+
 	
-	public void agregar1(ActionEvent actionEvent) {
-
-		DataSistema.clientes.add(new Cliente_Empresa(txtnombre.getText(),"SA", txtdireccion.getText(),txtcontacto.getText(),Integer.parseInt(txtdescuento.getText())));
-		
-		txtnombre.setText("");
-		txtcontacto.setText("");
-		txtdireccion.setText("");
-		txtdescuento.setText("");
-		txtmostrar.appendText("AGREGADO"+"\n");
-		txtmostrar.appendText(DataSistema.clientes.get(DataSistema.clientes.size()-1).toString());
-
-	}
-
 }
