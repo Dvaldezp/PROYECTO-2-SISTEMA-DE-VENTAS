@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="744.0" prefWidth="1047.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerClienteEmpre">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerClienteEmpre">
    <children>
-      <Button fx:id="cargarTabla" layoutX="387.0" layoutY="144.0" mnemonicParsing="false" onAction="#cargarTabla" prefHeight="38.0" prefWidth="232.0" text="Cargar todos los clientes" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="cargarTabla" layoutX="344.0" layoutY="152.0" mnemonicParsing="false" onAction="#cargarTabla" prefHeight="27.0" prefWidth="188.0" text="Cargar todos los clientes" textAlignment="CENTER" textFill="#1e1943">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="tblCliente" layoutX="159.0" layoutY="212.0" prefHeight="320.0" prefWidth="669.0">
+      <TableView fx:id="tblCliente" layoutX="116.0" layoutY="223.0" prefHeight="320.0" prefWidth="669.0">
         <columns>
           <TableColumn fx:id="tfCodigo" prefWidth="64.0" text="Id Cliente" />
           <TableColumn fx:id="tfNombre" prefWidth="160.0" text="Nombre" />

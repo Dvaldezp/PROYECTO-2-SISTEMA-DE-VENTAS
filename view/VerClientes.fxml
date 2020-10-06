@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="verDatos" prefHeight="630.0" prefWidth="860.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerCliente">
+<Pane fx:id="verDatos" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorVerCliente">
    <children>
-      <Button fx:id="cargarTabla" layoutX="366.0" layoutY="121.0" mnemonicParsing="false" onAction="#cargarTabla" prefHeight="28.0" prefWidth="102.0" text="Cargar Tabla">
+      <Button fx:id="cargarTabla" layoutX="387.0" layoutY="150.0" mnemonicParsing="false" onAction="#cargarTabla" prefHeight="28.0" prefWidth="102.0" text="Cargar Tabla">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <TableView fx:id="tblCliente" layoutX="84.0" layoutY="187.0" prefHeight="303.0" prefWidth="693.0">
+      <TableView fx:id="tblCliente" layoutX="104.0" layoutY="215.0" prefHeight="303.0" prefWidth="693.0">
         <columns>
           <TableColumn fx:id="tfCodigo" prefWidth="91.0" text="Id Cliente" />
           <TableColumn fx:id="tfNombre" prefWidth="136.0" text="Nombre" />

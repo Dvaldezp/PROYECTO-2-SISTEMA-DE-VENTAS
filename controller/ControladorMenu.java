@@ -46,7 +46,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver cliente Individual");
 			stage.setScene(scene);
 			stage.show();
 
@@ -68,7 +68,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Modificar Cliente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -92,7 +92,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Modificar Cliente Individual");
 			stage.setScene(scene);
 			stage.show();
 
@@ -114,7 +114,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver Cliente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -136,7 +136,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Eliminar Cliente Individual");
 			stage.setScene(scene);
 			stage.show();
 
@@ -159,7 +159,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Eliminar Cliente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -182,7 +182,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Buscar Cliente Individual");
 			stage.setScene(scene);
 			stage.show();
 
@@ -205,7 +205,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Buscar CLiente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -228,7 +228,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Agregar Cliente Individual");
 			stage.setScene(scene);
 			stage.show();
 
@@ -251,7 +251,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Agregar Cliente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -274,7 +274,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Agregar Producto");
 			stage.setScene(scene);
 			stage.show();
 
@@ -297,7 +297,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Buscar Factura");
 			stage.setScene(scene);
 			stage.show();
 
@@ -320,7 +320,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Buscar Producto");
 			stage.setScene(scene);
 			stage.show();
 
@@ -343,7 +343,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Crear Factura");
 			stage.setScene(scene);
 			stage.show();
 
@@ -366,7 +366,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Eliminar Producto");
 			stage.setScene(scene);
 			stage.show();
 
@@ -389,7 +389,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Historial de Compra");
 			stage.setScene(scene);
 			stage.show();
 
@@ -412,7 +412,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Imprimir Facturas");
 			stage.setScene(scene);
 			stage.show();
 
@@ -436,7 +436,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 900);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ingresar Factura");
 			stage.setScene(scene);
 			stage.show();
 
@@ -460,7 +460,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Realizar Orden de Compra");
 			stage.setScene(scene);
 			stage.show();
 
@@ -483,7 +483,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver Facturas");
 			stage.setScene(scene);
 			stage.show();
 
@@ -506,7 +506,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver Producto");
 			stage.setScene(scene);
 			stage.show();
 
@@ -530,7 +530,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver Cliente Empresa");
 			stage.setScene(scene);
 			stage.show();
 
@@ -539,8 +539,7 @@ public class ControladorMenu {
 		}
 
 	}
-	
-	
+
 	public void modificarproducto(ActionEvent actionEvent) {
 
 		/**
@@ -555,7 +554,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Modificar Producto");
 			stage.setScene(scene);
 			stage.show();
 
@@ -564,8 +563,7 @@ public class ControladorMenu {
 		}
 
 	}
-	
-	
+
 	public void prueba(ActionEvent actionEvent) {
 
 		/**
@@ -580,7 +578,7 @@ public class ControladorMenu {
 			ControladorVerCliente controlador1 = fxmlLoader.getController();
 
 			Scene scene = new Scene(layout, 900, 700);
-			stage.setTitle("Prueba");
+			stage.setTitle("Ver Todos los Clientes");
 			stage.setScene(scene);
 			stage.show();
 

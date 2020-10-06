@@ -8,19 +8,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="603.0" prefWidth="700.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFacturas">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFacturas">
    <children>
-      <Label layoutX="107.0" layoutY="33.0" prefHeight="38.0" prefWidth="227.0" text="Facturas Especificas">
+      <Label layoutX="220.0" layoutY="150.0" prefHeight="38.0" prefWidth="227.0" text="Facturas Especificas">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextArea fx:id="txtfacturas" layoutX="107.0" layoutY="78.0" prefHeight="94.0" prefWidth="227.0" />
-      <Button fx:id="verfacturas" layoutX="426.0" layoutY="106.0" mnemonicParsing="false" onAction="#verfacturas" prefHeight="30.0" prefWidth="157.0" text="Ver todas las facturas">
+      <TextArea fx:id="txtfacturas" layoutX="220.0" layoutY="195.0" prefHeight="94.0" prefWidth="278.0" />
+      <Button fx:id="verfacturas" layoutX="517.0" layoutY="195.0" mnemonicParsing="false" onAction="#verfacturas" prefHeight="27.0" prefWidth="152.0" text="Ver todas las facturas">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <TableView fx:id="tblCliente" layoutX="107.0" layoutY="203.0" prefHeight="231.0" prefWidth="404.0">
+      <TableView fx:id="tblCliente" layoutX="220.0" layoutY="320.0" prefHeight="231.0" prefWidth="404.0">
         <columns>
           <TableColumn fx:id="tfCodigo" prefWidth="65.0" text="Numero" />
           <TableColumn fx:id="tfNombre" prefWidth="212.0" text="Cliente" />
