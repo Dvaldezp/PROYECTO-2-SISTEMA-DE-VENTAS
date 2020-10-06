@@ -7,20 +7,20 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorEliminarClienteIndi">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorEliminarClienteIndi">
    <children>
-      <Label layoutX="67.0" layoutY="30.0" prefHeight="44.0" prefWidth="413.0" text="Eliminar cliente individual" textAlignment="CENTER">
+      <Label layoutX="64.0" layoutY="53.0" prefHeight="44.0" prefWidth="308.0" text="Eliminar cliente individual" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="19.0" layoutY="172.0" prefHeight="52.0" prefWidth="160.0" text="Codigo del cliente" textAlignment="CENTER">
+      <Label layoutX="68.0" layoutY="216.0" prefHeight="52.0" prefWidth="160.0" text="Codigo del cliente" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcodigo" layoutX="44.0" layoutY="224.0" prefHeight="25.0" prefWidth="88.0" />
-      <Button fx:id="eliminar" layoutX="369.0" layoutY="395.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="103.0" text="Eliminar">
+      <TextField fx:id="txtcodigo" layoutX="68.0" layoutY="284.0" prefHeight="25.0" prefWidth="88.0" />
+      <Button fx:id="eliminar" layoutX="411.0" layoutY="494.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="29.0" prefWidth="78.0" text="Eliminar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
@@ -30,11 +30,11 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="buscar" layoutX="171.0" layoutY="222.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="103.0" text="Buscar">
+      <Button fx:id="buscar" layoutX="176.0" layoutY="282.0" mnemonicParsing="false" onAction="#buscar" prefHeight="29.0" prefWidth="65.0" text="Buscar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
       </Button>
-      <TextArea fx:id="txtmostrar" layoutX="40.0" layoutY="265.0" prefHeight="104.0" prefWidth="790.0" />
+      <TextArea fx:id="txtmostrar" layoutX="64.0" layoutY="325.0" prefHeight="104.0" prefWidth="790.0" />
    </children>
 </Pane>

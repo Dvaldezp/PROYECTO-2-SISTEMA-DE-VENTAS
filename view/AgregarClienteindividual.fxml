@@ -8,43 +8,43 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorAgregarCliente">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorAgregarCliente">
    <children>
-      <Label layoutX="67.0" layoutY="30.0" prefHeight="44.0" prefWidth="413.0" text="Agregar cliente individual" textAlignment="CENTER">
+      <Label layoutX="85.0" layoutY="118.0" prefHeight="44.0" prefWidth="413.0" text="Agregar cliente individual" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="agregar" layoutX="369.0" layoutY="395.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="103.0" text="Agregar">
+      <Button fx:id="agregar" layoutX="387.0" layoutY="483.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="103.0" text="Agregar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="108.0" layoutY="179.0" prefHeight="38.0" prefWidth="74.0" text="Nombre" textAlignment="CENTER">
+      <Label layoutX="126.0" layoutY="267.0" prefHeight="38.0" prefWidth="74.0" text="Nombre" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="277.0" layoutY="179.0" prefHeight="38.0" prefWidth="74.0" text="Apellido" textAlignment="CENTER">
+      <Label layoutX="295.0" layoutY="267.0" prefHeight="38.0" prefWidth="74.0" text="Apellido" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="461.0" layoutY="179.0" prefHeight="38.0" prefWidth="88.0" text="Direccion" textAlignment="CENTER">
+      <Label layoutX="479.0" layoutY="267.0" prefHeight="38.0" prefWidth="88.0" text="Direccion" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="664.0" layoutY="171.0" prefHeight="38.0" prefWidth="88.0" text="Dpi" textAlignment="CENTER">
+      <Label layoutX="682.0" layoutY="259.0" prefHeight="38.0" prefWidth="88.0" text="Dpi" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtnombre" layoutX="64.0" layoutY="224.0" prefHeight="25.0" prefWidth="137.0" />
-      <TextField fx:id="txtapellido" layoutX="246.0" layoutY="224.0" prefHeight="25.0" prefWidth="137.0" />
-      <TextField fx:id="txtdireccion" layoutX="446.0" layoutY="224.0" prefHeight="25.0" prefWidth="160.0" />
-      <TextField fx:id="txtdpi" layoutX="653.0" layoutY="224.0" prefHeight="25.0" prefWidth="173.0" />
-      <FlowPane prefHeight="200.0" prefWidth="200.0" />
-      <TextArea fx:id="txtmostrar" layoutX="67.0" layoutY="261.0" prefHeight="73.0" prefWidth="758.0" />
+      <TextField fx:id="txtnombre" layoutX="82.0" layoutY="312.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txtapellido" layoutX="264.0" layoutY="312.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txtdireccion" layoutX="464.0" layoutY="312.0" prefHeight="25.0" prefWidth="160.0" />
+      <TextField fx:id="txtdpi" layoutX="671.0" layoutY="312.0" prefHeight="25.0" prefWidth="173.0" />
+      <FlowPane layoutX="82.0" layoutY="386.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="txtmostrar" layoutX="85.0" layoutY="349.0" prefHeight="73.0" prefWidth="758.0" />
    </children>
 </Pane>

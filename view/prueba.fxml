@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #04b595;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Prueba">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Prueba">
    <children>
-      <Button layoutX="354.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
+      <Button layoutX="385.0" layoutY="535.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Regresar" textAlignment="CENTER" textFill="#1e1943">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <Button fx:id="cargarTabla" layoutX="376.0" layoutY="118.0" mnemonicParsing="false" onAction="#cargarTabla" prefHeight="25.0" prefWidth="103.0" text="Cargar">

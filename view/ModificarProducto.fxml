@@ -6,43 +6,43 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="730.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorModProducto">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorModProducto">
    <children>
-      <Label layoutX="62.0" layoutY="51.0" prefHeight="53.0" prefWidth="205.0" text="Modificar Producto">
+      <Label layoutX="201.0" layoutY="126.0" prefHeight="53.0" prefWidth="205.0" text="Modificar Producto">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcodigo" layoutX="94.0" layoutY="194.0" />
-      <Label layoutX="97.0" layoutY="145.0" text="Ingrese el Codigo de Producto">
+      <TextField fx:id="txtcodigo" layoutX="198.0" layoutY="265.0" />
+      <Label layoutX="201.0" layoutY="216.0" text="Ingrese el Codigo de Producto">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="283.0" layoutY="326.0" text="Tipo de Producto">
+      <Label layoutX="381.0" layoutY="395.0" text="Tipo de Producto">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="469.0" layoutY="319.0" text="Precio">
+      <Label layoutX="567.0" layoutY="388.0" text="Precio">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtprecio" layoutX="461.0" layoutY="358.0" prefHeight="25.0" prefWidth="149.0" />
-      <TextField fx:id="txttipo" layoutX="275.0" layoutY="358.0" prefHeight="25.0" prefWidth="159.0" />
-      <Button fx:id="modificar1" layoutX="275.0" layoutY="466.0" mnemonicParsing="false" onAction="#modificar1" prefHeight="25.0" prefWidth="130.0" text="Modificar" textAlignment="CENTER" textFill="#1e1943">
+      <TextField fx:id="txtprecio" layoutX="559.0" layoutY="427.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txttipo" layoutX="373.0" layoutY="427.0" prefHeight="25.0" prefWidth="159.0" />
+      <Button fx:id="modificar1" layoutX="381.0" layoutY="546.0" mnemonicParsing="false" onAction="#modificar1" prefHeight="29.0" prefWidth="89.0" text="Modificar" textAlignment="CENTER" textFill="#1e1943">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="buscarproducto1" layoutX="275.0" layoutY="192.0" mnemonicParsing="false" onAction="#buscarproducto1" prefHeight="29.0" prefWidth="173.0" text="Buscar Producto">
+      <Button fx:id="buscarproducto1" layoutX="373.0" layoutY="261.0" mnemonicParsing="false" onAction="#buscarproducto1" prefHeight="29.0" prefWidth="143.0" text="Buscar Producto">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
       </Button>
-      <TextField fx:id="txtnombre" layoutX="100.0" layoutY="358.0" prefHeight="25.0" prefWidth="143.0" />
-      <Label layoutX="94.0" layoutY="326.0" text="Nombre">
+      <TextField fx:id="txtnombre" layoutX="198.0" layoutY="427.0" prefHeight="25.0" prefWidth="143.0" />
+      <Label layoutX="192.0" layoutY="395.0" text="Nombre">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>

@@ -6,20 +6,20 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="855.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorModClienteEmpre">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorModClienteEmpre">
    <children>
-      <Label layoutX="75.0" layoutY="23.0" prefHeight="52.0" prefWidth="390.0" text="Modificar cliente de empresa" textAlignment="CENTER">
+      <Label layoutX="116.0" layoutY="83.0" prefHeight="52.0" prefWidth="390.0" text="Modificar cliente de empresa" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="67.0" layoutY="172.0" prefHeight="52.0" prefWidth="317.0" text="Ingrese el codigo del cliente" textAlignment="CENTER">
+      <Label layoutX="108.0" layoutY="232.0" prefHeight="52.0" prefWidth="317.0" text="Ingrese el codigo del cliente" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcodigo" layoutX="67.0" layoutY="224.0" prefHeight="25.0" prefWidth="242.0" />
-      <Button fx:id="modificaCliente" layoutX="369.0" layoutY="493.0" mnemonicParsing="false" onAction="#modificaCliente" prefHeight="25.0" prefWidth="103.0" text="Modificar">
+      <TextField fx:id="txtcodigo" layoutX="108.0" layoutY="284.0" prefHeight="25.0" prefWidth="242.0" />
+      <Button fx:id="modificaCliente" layoutX="401.0" layoutY="574.0" mnemonicParsing="false" onAction="#modificaCliente" prefHeight="29.0" prefWidth="95.0" text="Modificar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
@@ -29,31 +29,31 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="51.0" layoutY="383.0" prefHeight="38.0" prefWidth="74.0" text="Nombre" textAlignment="CENTER">
+      <Label layoutX="92.0" layoutY="443.0" prefHeight="38.0" prefWidth="74.0" text="Nombre" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="212.0" layoutY="383.0" prefHeight="38.0" prefWidth="103.0" text="Direccion" textAlignment="CENTER">
+      <Label layoutX="253.0" layoutY="443.0" prefHeight="38.0" prefWidth="103.0" text="Direccion" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="364.0" layoutY="376.0" prefHeight="38.0" prefWidth="88.0" text="Contacto" textAlignment="CENTER">
+      <Label layoutX="405.0" layoutY="436.0" prefHeight="38.0" prefWidth="88.0" text="Contacto" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="568.0" layoutY="383.0" prefHeight="38.0" prefWidth="199.0" text="Descuento Favorable" textAlignment="CENTER">
+      <Label layoutX="609.0" layoutY="443.0" prefHeight="38.0" prefWidth="199.0" text="Descuento Favorable" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtnombre" layoutX="51.0" layoutY="419.0" prefHeight="25.0" prefWidth="137.0" />
-      <TextField fx:id="txtdireccion" layoutX="205.0" layoutY="419.0" prefHeight="25.0" prefWidth="137.0" />
-      <TextField fx:id="txtcontacto" layoutX="359.0" layoutY="420.0" prefHeight="25.0" prefWidth="185.0" />
-      <TextField fx:id="txtdesc" layoutX="562.0" layoutY="420.0" prefHeight="25.0" prefWidth="199.0" />
-      <Button fx:id="buscarCliente" layoutX="333.0" layoutY="222.0" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="25.0" prefWidth="103.0" text="Buscar">
+      <TextField fx:id="txtnombre" layoutX="92.0" layoutY="479.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txtdireccion" layoutX="246.0" layoutY="479.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txtcontacto" layoutX="400.0" layoutY="480.0" prefHeight="25.0" prefWidth="185.0" />
+      <TextField fx:id="txtdesc" layoutX="603.0" layoutY="480.0" prefHeight="25.0" prefWidth="199.0" />
+      <Button fx:id="buscarCliente" layoutX="374.0" layoutY="282.0" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="29.0" prefWidth="74.0" text="Buscar">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>

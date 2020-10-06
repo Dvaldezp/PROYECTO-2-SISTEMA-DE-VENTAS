@@ -7,20 +7,20 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="txtcampo" prefHeight="624.0" prefWidth="1025.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorBuscarFactura">
+<Pane fx:id="txtcampo" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorBuscarFactura">
    <children>
-      <Label layoutX="103.0" layoutY="74.0" text="Ingrese el No. De Factura">
+      <Label layoutX="84.0" layoutY="215.0" text="Ingrese el No. De Factura">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="31.0" prefHeight="38.0" prefWidth="137.0" text="Facturas">
+      <Label layoutX="84.0" layoutY="39.0" prefHeight="38.0" prefWidth="137.0" text="Facturas">
          <font>
             <Font name="System Bold Italic" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="txtcodi" layoutX="103.0" layoutY="106.0" prefHeight="27.0" prefWidth="175.0" />
-      <Button fx:id="buscar" layoutX="300.0" layoutY="107.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
-      <TextArea fx:id="campo" layoutX="109.0" layoutY="170.0" prefHeight="212.0" prefWidth="752.0" />
+      <TextField fx:id="txtcodi" layoutX="84.0" layoutY="254.0" prefHeight="27.0" prefWidth="175.0" />
+      <Button fx:id="buscar" layoutX="265.0" layoutY="255.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <TextArea fx:id="campo" layoutX="84.0" layoutY="292.0" prefHeight="212.0" prefWidth="730.0" />
    </children>
 </Pane>

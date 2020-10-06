@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="1049.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFactura">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorFactura">
    <children>
-      <TableView layoutX="80.0" layoutY="184.0" prefHeight="180.0" prefWidth="596.0">
+      <TableView layoutX="120.0" layoutY="288.0" prefHeight="180.0" prefWidth="596.0">
         <columns>
           <TableColumn fx:id="idicodigo" prefWidth="118.0" text="Codigos" />
           <TableColumn prefWidth="172.0" text="Descripcion" />
@@ -18,22 +18,22 @@
             <TableColumn minWidth="0.0" prefWidth="162.0" text="Sub-Total" />
         </columns>
       </TableView>
-      <Button layoutX="688.0" layoutY="401.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="163.0" text="Imprimir">
+      <Button layoutX="728.0" layoutY="505.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="91.0" text="Imprimir">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Button>
-      <Label layoutX="80.0" layoutY="79.0" text="Ingrese el codigo del cliente">
+      <Label layoutX="120.0" layoutY="183.0" text="Ingrese el codigo del cliente">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="80.0" layoutY="31.0" text="Imprimir Factura">
+      <Label layoutX="120.0" layoutY="135.0" text="Imprimir Factura">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="80.0" layoutY="119.0" prefHeight="25.0" prefWidth="144.0" />
-      <TableView layoutX="497.0" layoutY="370.0" prefHeight="61.0" prefWidth="179.0">
+      <TextField layoutX="120.0" layoutY="223.0" prefHeight="25.0" prefWidth="144.0" />
+      <TableView layoutX="537.0" layoutY="474.0" prefHeight="61.0" prefWidth="179.0">
         <columns>
           <TableColumn prefWidth="199.0" text="TOTAL" />
         </columns>

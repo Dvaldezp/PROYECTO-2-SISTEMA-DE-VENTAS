@@ -4,22 +4,21 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="624.0" prefWidth="806.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorMenu">
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #992936;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControladorMenu">
    <children>
-      <Button fx:id="btnsalir" layoutX="363.0" layoutY="525.0" mnemonicParsing="false" onAction="#validarSalir" prefHeight="25.0" prefWidth="130.0" text="SALIR" textAlignment="CENTER" textFill="#1e1943">
+      <Button fx:id="btnsalir" layoutX="410.0" layoutY="550.0" mnemonicParsing="false" onAction="#validarSalir" prefHeight="25.0" prefWidth="81.0" text="SALIR" textAlignment="CENTER" textFill="#1e1943">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <MenuBar prefHeight="25.0" prefWidth="855.0">
+      <MenuBar prefHeight="25.0" prefWidth="900.0">
         <menus>
           <Menu mnemonicParsing="false" text="Cliente">
             <items>
+                  <MenuItem fx:id="prueba" mnemonicParsing="false" onAction="#prueba" text="Ver todos los clientes" />
               <MenuItem fx:id="validarVerClienteI" mnemonicParsing="false" onAction="#validarVerClienteI" text="Ver todos los clientes individual" />
                   <MenuItem fx:id="validarVerClienteEmpre" mnemonicParsing="false" onAction="#validarVerClienteEmpre" text="Ver todos los cliente empresa" />
                   <MenuItem fx:id="validarModificarClienteE" mnemonicParsing="false" onAction="#validarModificarClienteE" text="Modificar Cliente Empresa" />
@@ -30,7 +29,6 @@
                   <MenuItem fx:id="buscarClienteEmpre" mnemonicParsing="false" onAction="#buscarClienteEmpre" text="Buscar Cliente Empresa" />
                   <MenuItem fx:id="agregarClienteIndi" mnemonicParsing="false" onAction="#agregarClienteIndi" text="Agregar Cliente Individual" />
                   <MenuItem fx:id="agregarClienteEmpre" mnemonicParsing="false" onAction="#agregarClienteEmpre" text="Agregar Cliente Empresa" />
-                  <MenuItem fx:id="prueba" mnemonicParsing="false" onAction="#prueba" text="Prueba" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Factura">
@@ -60,15 +58,5 @@
             </Menu>
         </menus>
       </MenuBar>
-      <ImageView fitHeight="117.0" fitWidth="145.0" layoutX="573.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Pictures/Logo%20UMG.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="80.0" fitWidth="87.0" layoutX="20.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Pictures/usuario.png" />
-         </image>
-      </ImageView>
    </children>
 </Pane>
